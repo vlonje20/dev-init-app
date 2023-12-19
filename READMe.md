@@ -108,5 +108,8 @@ production area
  create docker image 
  Dockerfile
 
- # App Final Name 
-   jenkins-app
+# App Final Name 
+  jenkins-app
+
+# Note:
+  - Still working on the project 
