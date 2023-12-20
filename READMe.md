@@ -22,42 +22,6 @@ CICD Project with Jenkins:
 - Java 
   https://www.java.com/download/ie_manual.jsp 
 
-- Jenkins (as a container) (port=8181) 
-  - Pull Jenkins Image: 
-    docker pull jenkins/jenkins:lts
-  - Then run the container 
-    docker run -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home --name jenkins -d jenkins/jenkins:lts
-
-User=admin 
-Passwd: 
-
-Get into Jenkins container: 
- - docker exec -it jenkins /bin/bash  OR 
- - docker exec -it jenkins bash
- - cat filepath 
-
-
-- Sonarqube (as a container) (port=9000)
-  - Pull Jenkins Image:
-    docker pull sonarqube 
-  - Run the container 
-    docker run -d --name sonarqube -p 9000:9000 sonarqube 
-
-  - To access sonarqube on the browser
-    - Need IP 
-      ipconfig 
-      (192.168.254.106:9000)
-    - user=admin 
-    - passwd=admin 
-
-- Nexus (as a container) (port=8082)
-  - Run the container 
-    docker run -d -p 8082:8081 --name nexus-repo-service -v C:/Nexus/nexus-data:/nexus-data sonatype/nexus3:3.38.0
-  Get into Nexus container: 
-    - docker exec -it nexus-repo-service /bin/bash 
-    - cat filepath
-
-
 
 - GitHub (git) = SCMT  
 - Jenkins = (CICD)
@@ -86,19 +50,6 @@ Get into Jenkins container:
 
 - ansible = configuration and provisioning 
 - terraform = provisioning 
-
-
-working area/environmet: 
- - git add . = add all the files in the present working directory 
- - git add fileName = add the selected file 
- - git add file1 file4 = add selected files 
-staging area: 
- - git commit -m "commit message"  
-production area 
- - git push github-URL branchName 
-   git push git remote add origin https://github.com/vlonje20/jenkins-CICD.git main 
- - git remote add aliasName url 
- - git push aliasName branchName 
 
 
  source code 
