@@ -75,8 +75,8 @@
 
  - Paste the following just above the </tomcat-users> closing.
 
-   #  <user username="vin" password="admin123" roles="manager-gui,admin-gui"/>
-   #  <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
+     <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>
+     <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 
 
 # 6. Email Notification 
