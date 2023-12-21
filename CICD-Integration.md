@@ -32,7 +32,7 @@
 
 
 # 3. Jenkins SonarQube Intergrations (Code Quality) 
-     # On GitHub:  
+  # On GitHub:  
   - Make sure your SonarQube Server is running 
   - Go to the Build Script (pom.xml) in the GitHub Repository
   - Go to 'Properties' and change the sonar.host.url (IP addressPort) and replace with the 
