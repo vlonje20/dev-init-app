@@ -22,20 +22,19 @@ CICD Project with Jenkins:
 - Java 
   https://www.java.com/download/ie_manual.jsp 
 
-
+# Tools Needed:
 - GitHub (git) = SCMT  
 - Jenkins = (CICD)
 - Maven = Build/package 'Java applications' 
 - Sonarqube = scan codes 
 - Nexus = Backup our build artifact (optional)
 - Tomcat = (to host our application)
-
 - Docker = to create docker images
            to run containers 
 - DockerHub = to backup our images  
 
 
-
+# DevOps Tools: 
 - git = versioning 
 - github = manage our sorce code 
 - maven = build our code to build artifact 
@@ -47,7 +46,6 @@ CICD Project with Jenkins:
 - dockerhub = store our docker images 
 - docker = run our containers 
 - kubernetes = manage our containers 
-
 - ansible = configuration and provisioning 
 - terraform = provisioning 
 
