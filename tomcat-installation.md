@@ -1,6 +1,9 @@
 # Tomcat Installation: 
 ======================
 
+- severType = ubuntu 
+- instanceType = t2.micro
+
   - Become root 
     sudo -i / sudo su - 
 
@@ -51,7 +54,7 @@ Set Your User Credentials:
 ==========================
 - Path to edith manager-gui/admin-gui  
 
-sudo nano /etc/tomcat9/tomcat-users.xml
+  sudo nano /etc/tomcat9/tomcat-users.xml
 
 - Paste the following, save and exit: 
 
@@ -66,7 +69,7 @@ sudo nano /etc/tomcat9/tomcat-users.xml
 
 Maven Installation: 
 ===================
-sudo apt install maven
+sudo apt install maven -y 
 
 - To check if maven is installed 
   mvn --version

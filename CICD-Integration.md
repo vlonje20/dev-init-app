@@ -1,88 +1,90 @@
 # CICD Jenkins Integration:
+===========================
 
-1. # Jenkins GitHub Intergrations:   
-  - Copy the URL on GitHub and paste on Jenkins. 
+# 1. Jenkins GitHub Intergrations:  
+  - Go to Dashboard and create a 'new project' (+ New Item)
+  - Enter 'jenkins project' name and select Freestyle project and click OK 
+  - Under "Source Code Management", select Git 
+  - Copy the GitHub project URL and paste on Repository URL. 
+  - Set your Credentials: 
+    - Under Credentials, select '+Add' then Jenkins
+    - Leave Domain, Kind and Scope as default
+    - Under username, input your jenkins username and password
+    - Input your description and select Add
+  - Now Under Credentials replace -none- with your credentials 
+  - Under 'Branches to build' input your production branch 
+  - Now Save 
+  - Select 'Build Now'
 
-2. # Jenkins Maven Intergrations:  
-  - Dashboard ==> Manage Jenkins ==> Tool==> Add Maven [maven3.8.1] 
-    Dashboard ==> Project ==> Configure ==> Build --> Add Build Step --> 
-    Invoke-top-level Maven Targets --> Maven Version --> Goal (clean package) --> Build Now 
-  - Maven Clean Package does: 
-    validation / compilation / testing / packaging 
 
-3. # Jenkins SonarQube Intergrations (Code Quality) 
+# 2. Jenkins Maven Intergrations:  
+  - Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
+  - Under Name, write maven+highest-version 
+    For instance maven3.9.6
+  - Now Save
+
+  - Dashboard ==> Project ==> Configure ==> Build Steps ==> 
+    Add Build Step ==> Invoke-top-level Maven Targets 
+  - Under 'Maven Version', select your preconfigured maven version.
+  - Under 'Goal' write 'clean package' 
+  - Now Save
+  - Select 'Build Now'
+
+
+# 3. Jenkins SonarQube Intergrations (Code Quality) 
+     # On GitHub:  
   - Make sure your SonarQube Server is running 
   - Go to the Build Script (pom.xml) in the GitHub Repository
-  - Go to Properties and change the sonar.host.url (IP addressPort) and replace with the 
+  - Go to 'Properties' and change the sonar.host.url (IP addressPort) and replace with the 
     right IP addressPort of your SonarQube Server. 
-  - Commit the changes.  
-  - Go to Jenkins --> Configure --> Build --> Add Build Step --> 
-    Invoke-top-level Maven Targets --> Goals (sonar:sonar) --> Build Now 
-  * To Start SonarQube we need to go to the /bin directory
-   - Become Sonar (sudo su - sonar) --> cd /opt --> ls --> cd sonarqube/ 
-     --> ls --> ls bin/ --> ls bin/linux-x86-64 --> sh bin/linux-x86-64/sonar.sh start  
-   - Login admin / admin 
+  - Commit the changes. 
 
-4. # Jenkins Nexus Intergrations 
-  - We do the intergration in both servers.
-     # Nexus Server
-  - Go to pom.xml 
-   - Open Nexus Server --> Project Repository and copy both the snapshot and 
-     releases url for both repositories 
-   - Open pom.xml in the project directory in GitHub and add both repositories 
-     from Nexus to Distribution Management.
-   - Open pom.xml and search for <distributionmanagement> and edit the respective 
-     urls copied from Nexus.  
-   - Commit the changes
+     # On Jenkins:  
+  - Go to Dashboard ==> Project ==> Configure ==> Build Steps ==> Add Build Step ==> 
+    Invoke-top-level Maven Targets
+  - Under 'Maven Version', select your preconfigured maven version.
+  - Under 'Goal' write 'sonar:sonar'
+  - Then Save 
+  - Build Now    
 
-     # Jenkins Server 
-   - setting.xml = jenkins server 
-   - path: /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/maven3.9.6/conf
-     In docker container  
-     
-   - ls -->
-     cd tools/ --> ls --> cd hudson.tasks.Maven_MavenInstallation/ --> ls --> 
-     cd maven3.8.1/ ls --> ls conf/ --> vi conf/setting.xml
-   - Search for Server Tag <severs> 
-   - Before the closing tag for servers paste the following  
-              <server>
-                <id>nexus</id>
-                <username>admin</username>
-                <password>admin123</password>
-            </server>
-   - Save and exit.   
+# 4. Jenkins Tomcat Intergrations 
+   cp *.war /var/lib/tomcat9/webapps   
+ - We do this intergration using a plugin call 'Deploy to Container'  
+ - In Jenkins go to Dashboard ==> Manage Jenkins ==> Manage Plugins ==> 
+   Available ==> Search (Deploy to container)
 
-     # Nexus Server: 
-   - To get the Nexus Server Information 
-     vi /nexus/conf/setting.xml
-            <server>
-                <id>nexus</id>
-                <username>admin</username>
-                <password>admin123</password>
-            </server> 
-   - In Jenkins got to Project --> Configure --> Build --> Add Build Step --> 
-     Invoke-top-level Maven Targets --> Goals (deploy) --> Build Now 
+ - Dashboard ==> Project ==> Configure ==> Post-Build-Action ==> Add Post-Build-Action ==> 
+   Deploy war/ear to container ==>
 
-5. # Jenkins Tomcat Intergrations 
-   cp *.war /var/lib/tomcat9/webapps
- - We do this intergration using a plugin call Deploy to Container  
- - In Jenkins go to Dashboard --> Manage Jenkins --> Manage Plugins --> 
-   Available --> Search (Deploy to container)
- - Dashboard --> Project --> Configure --> Post-Build-Action --> Add Post-Build-Action --> 
-   Deploy war or ear to container -->
-   target / *war --> Add Container (Tomcat version) --> Paste Tomcat URL --> 
-   Add Credentials --> Build Now   
- * Start Tomcat Server with the command starttomcat 
- * Check Tomcat Credentials
-   - ls /opt --> ls /opt/tomcat9 --> ls /opt/tomcat9/conf --> 
-     vi ls /opt/tomcat9/conf/tomcat-users.xml 
-   - Check the users tag 
+ - Under 'Deploy war/ear to a container'
+   target/*war
+ - Add Container ==> Chose Tomcat Version 
+
+ - Under Containers/Tomcat 9.x Remote 
+   - add new credentials
+   - use your tomcat credentials that you will configure in the 'tomcat-users.xml'
+
+ - Under Tomcat URL 
+   - Copy and paste your tomcat url 
+
+
+ # To create your tomcat credentials: 
+ - On your terminal do the following: 
+
+     sudo nano /etc/tomcat9/tomcat-users.xml 
+
+ - Paste the following just above the </tomcat-users> closing.
+
      <user username="vin" password="admin123" roles="manager-gui,admin-gui"/>
      <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 
-6. # Email Notification 
+
+# 6. Email Notification 
   - In Jenkins go to Dashboard --> Project --> Configure --> Post-Build-Action --> 
     Add Post-Build-Action --> Email Notification --> Emails --> Build Now  
+
+
+
 
 
 Build Triggers: 
