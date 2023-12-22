@@ -84,9 +84,6 @@
     Add Post-Build-Action --> Email Notification --> Emails --> Build Now  
 
 
-
-
-
 Build Triggers: 
 ===============
 - We use build triggers to automate the process.  
@@ -112,3 +109,10 @@ Build Triggers:
      Content type = (application/json)
      Payload URL = Paste the Jenkins URL with the extension github-webhook/ 
      (e.g. http://18.218.211.120:8080/github-webhook/)
+
+
+# Pic Format:
+- 900x600
+
+
+
