@@ -40,7 +40,7 @@
   - Commit the changes. 
 
      # On Jenkins:  
-  - Go to Dashboard ==> Project ==> Configure ==> Build Steps ==> Add Build Step ==> 
+  - Go to Dashboard ==> Project name ==> Configure ==> Build Steps ==> Add Build Step ==> 
     Invoke-top-level Maven Targets
   - Under 'Maven Version', select your preconfigured maven version.
   - Under 'Goal' write 'sonar:sonar'
@@ -50,14 +50,16 @@
 # 4. Jenkins Tomcat Intergrations 
    cp *.war /var/lib/tomcat9/webapps   
  - We do this intergration using a plugin call 'Deploy to Container'  
- - In Jenkins go to Dashboard ==> Manage Jenkins ==> Manage Plugins ==> 
-   Available ==> Search (Deploy to container)
+ - In Jenkins go to Dashboard ==> Manage Jenkins ==> Plugins ==> 
+   Available plugins ==> Search "Deploy to container"
+ - Select and install  
 
- - Dashboard ==> Project ==> Configure ==> Post-Build-Action ==> Add Post-Build-Action ==> 
+ - Dashboard ==> Project name ==> Configure ==> Post-Build-Actions ==> Add Post-Build-Action ==> 
    Deploy war/ear to container ==>
 
  - Under 'Deploy war/ear to a container'
-   target/*war
+   target/*.war
+   
  - Add Container ==> Chose Tomcat Version 
 
  - Under Containers/Tomcat 9.x Remote 
