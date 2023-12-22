@@ -31,7 +31,7 @@ Git:
   $ mkdir myDirectory && cd myDirectory 
 
 - Initialized your Directory 
-  $ git imit 
+  $ git init 
 
 
 Git ENVIRONMENT: 
@@ -39,14 +39,18 @@ Git ENVIRONMENT:
 
 # Working Environment: 
 - To add all the files in the current working Directory 
-  $ git add .  
+  $ git add . 
+
 - To add just one file  
-  $ git add fileName  
-- - To add multiple files but not all in the current working directory   
+  $ git add fileName 
+
+- To add multiple files but not all in the current working directory   
   $ git add file1 file4 file15 
+
 
 # Staging Environment: 
 - git commit -m "commit message"
+
 
 # Production Environment: 
 - AliasName 
@@ -55,11 +59,13 @@ Git ENVIRONMENT:
      $ git remote -v = To see your aliasName 
      $ git remote remove aliasName = To delete aliasName 
 
+
 # Branching: 
   - To create a branch:  
      $ git branch branchName
      $ git checkout branchName 
 
+     - You can combine both commands: 
      $ git checkout -b branchName
 
   - To delete a branch: 
@@ -69,11 +75,13 @@ Git ENVIRONMENT:
      $ git merge branchName 
   - If merge fails: (do manual merging by opening the file and fit the codes)
 
+
 # Tags:
   - After doing your commit, create a tag: 
      $ git tag -a v1.0 -m "Release version 1.0" (git tag -a tagName -m "tag message")
      $ git push --tags = Push all tags 
      $ git push origin v1.0:bugfix = push tags to a specific branch  
+
 
 # Other Commands in Production Environment: 
      $ git push aliasName branchName = To push to remote repository without tagging 

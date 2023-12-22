@@ -40,7 +40,7 @@
   - Commit the changes. 
 
      # On Jenkins:  
-  - Go to Dashboard ==> Project ==> Configure ==> Build Steps ==> Add Build Step ==> 
+  - Go to Dashboard ==> yourProject ==> Configure ==> Build Steps ==> Add Build Step ==> 
     Invoke-top-level Maven Targets
   - Under 'Maven Version', select your preconfigured maven version.
   - Under 'Goal' write 'sonar:sonar'
@@ -48,25 +48,24 @@
   - Build Now    
 
 # 4. Jenkins Tomcat Intergrations 
-   cp *.war /var/lib/tomcat9/webapps   
  - We do this intergration using a plugin call 'Deploy to Container'  
  - In Jenkins go to Dashboard ==> Manage Jenkins ==> Manage Plugins ==> 
-   Available ==> Search (Deploy to container)
+   Available ==> Search "Deploy to container"
+ - Select and install
 
- - Dashboard ==> Project ==> Configure ==> Post-Build-Action ==> Add Post-Build-Action ==> 
+ - Dashboard ==> Project ==> Configure ==> Post-Build-Actions ==> Add Post-Build-Action ==> 
    Deploy war/ear to container ==>
 
  - Under 'Deploy war/ear to a container'
-   target/*war
- - Add Container ==> Chose Tomcat Version 
+   target/*.war              /*OR   
+   target/yourBuildscript                                           
+
+ - Add Container ==> Chose Tomcat Version (It should be the latest stable version) 
 
  - Under Containers/Tomcat 9.x Remote 
    - add new credentials
    - use your tomcat credentials that you will configure in the 'tomcat-users.xml'
-
- - Under Tomcat URL 
-   - Copy and paste your tomcat url 
-
+   - Follow the steps below to create your user in 'tomcat-users.xml'
 
  # To create your tomcat credentials: 
  - On your terminal do the following: 
@@ -77,6 +76,9 @@
 
      <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>
      <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
+
+ - Under Tomcat URL 
+   - Copy and paste your tomcat url
 
 
 # 6. Email Notification 
@@ -111,8 +113,6 @@ Build Triggers:
      (e.g. http://18.218.211.120:8080/github-webhook/)
 
 
-# Pic Format:
-- 900x600
 
 
 
