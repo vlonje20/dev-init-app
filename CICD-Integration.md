@@ -23,10 +23,10 @@
     For instance maven3.9.6
   - Now Save
 
-  - Dashboard ==> Project ==> Configure ==> Build Steps ==> 
+  - Dashboard ==> Project name ==> Configure ==> Build Steps ==> 
     Add Build Step ==> Invoke-top-level Maven Targets 
   - Under 'Maven Version', select your preconfigured maven version.
-  - Under 'Goal' write 'clean package' 
+  - Under 'Goals' write 'clean package' 
   - Now Save
   - Select 'Build Now'
 
