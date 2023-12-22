@@ -109,7 +109,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>jenkins-app</finalName>
+		<finalName>jenkins-app-v1</finalName>
 		
 		<plugins>
 			<plugin>
