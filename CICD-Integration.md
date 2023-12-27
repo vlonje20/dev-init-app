@@ -3,7 +3,8 @@
 
 # 1. Jenkins GitHub Intergrations:  
   - Go to Dashboard and create a 'new project' (+ New Item)
-  - Enter 'jenkins project' name and select Freestyle project and click OK 
+  - Enter 'jenkins project' name and select Freestyle project and click OK
+  - Under Github project/Project url, paste your github project url  
   - Under "Source Code Management", select Git 
   - Copy the GitHub project URL and paste on Repository URL. 
   - Set your Credentials: 

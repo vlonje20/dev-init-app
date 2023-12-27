@@ -79,6 +79,22 @@ sudo apt-get install jenkins
 - Default port=8080
 - Exposed port=8181 (or chose your expose port)
 
+=================================================================
+
+# Troubleshooting: 
+  - If jenkins fails to integrate with git under 'Source Code Management'
+    Do the following to resolve this: 
+  - On your terminal, edit the Jenkins DNS configuration file using the command:
+    $ sudo nano /etc/resolv.conf 
+
+  - Add the following line to use Google DNS:
+    nameserver 8.8.8.8
+
+  - Save the file and restart Jenkins service:
+    $ sudo systemctl restart jenkins
+
+  - Go to Jenkins and try the integration again 
+
 
 To get the administrator password:
 ==================================
