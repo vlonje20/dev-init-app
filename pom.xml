@@ -28,7 +28,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
-		<sonar.projectName>jenkins-app-v1</sonar.projectName>
+		<sonar.projectName>jenkins-app</sonar.projectName>
         
 	</properties>
 
