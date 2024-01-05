@@ -33,20 +33,68 @@
 
 
 # 3. Jenkins SonarQube Intergrations: (Code Quality) 
+  # On SonarQube:
+  - Generate a Token:
+    - Go to Administration ==> Click the dropdown on Security ==> Users
+    - Click under 'Token'
+    - Enter Name under 'Name', Chose Duration then click Generate 
+    - Copy Token and Backup for you won't be able to see or copy it again. 
+
+    OR
+     
+    - Go to 'Account' on the top right hand corner and click 'My Account'
+    - Security 
+    - Fill the appropriate input and click 'Generate'
+    - Under 'Type', select 'Global Analysis Token'
+    - Remember to backup your token 
+
+
   # On GitHub:  
-  - Make sure your SonarQube Server is running 
   - Go to the Build Script (pom.xml) in the GitHub Repository
-  - Go to 'Properties' and change the sonar.host.url (IP addressPort) and replace with the 
-    right IP addressPort of your SonarQube Server. 
+  - Go to 'Properties' and add/edit the following: 
+    
+    <sonar.host.url>your-sonarqube-url</sonar.host.url>
+    <sonar.login>your-username</sonar.login>
+    <sonar.password>your-password</sonar.password>
+    <sonar.projectKey>your-sonarqube-token</sonar.projectKey>
+    <sonar.projectName>your-project-name</sonar.projectName>
+
   - Commit the changes. 
 
-     # On Jenkins:  
-  - Go to Dashboard ==> yourProject ==> Configure ==> Build Steps ==> Add Build Step ==> 
-    Invoke-top-level Maven Targets
-  - Under 'Maven Version', select your preconfigured maven version.
-  - Under 'Goal' write 'sonar:sonar'
-  - Then Save 
-  - Build Now    
+  # On Jenkins: 
+  - Download and Install SonarQube Plugins: 
+    - Dashboard ==> Manage Jenkins ==> Plugins
+    - Available Plugins ==> SonarQube Scanner for Jenkins 
+    - Select and install without restart 
+
+  - Configure SonarQube: 
+    - Dashboard ==> Manage Jenkins ==> System 
+    - Scroll down to SonarQube Servers and click 'Add SonarQube' 
+    - Check 'Environmental Variables'
+    - Input the following: 
+      - Name: your-name 
+      - Server URL: your server URL (eg: http://localhost:9000)
+      - Server authentication token: 
+        - Click the +Add button below ==> Jenkins 
+        - Domain: leave as it is
+        - Kind: Secret text 
+        - Scope: leave as it is 
+        - Username: your-username (eg: admin)
+        - Password: your-sonarqube-token
+        - ID: your-ID (eg: jenkins-sonar-cred)
+        - Description: your-Description (eg: jenkins-sonar-cred)
+        - Then click Add 
+      - Server authentication token:
+        - Select what you just created.
+    - Now Save 
+
+  - Run Your Job:
+    - Go to Dashboard ==> yourProject ==> Configure ==> Build Steps ==> Add Build Step ==> 
+      Invoke-top-level Maven Targets
+    - Under 'Maven Version', select your preconfigured maven version.
+    - Under 'Goal' write 'sonar:sonar'
+    - Then Save 
+    - Build Now    
 
 # 4. Jenkins Nexus Integration: (Artifact Backup)
   - Configure Nexus: 
@@ -89,10 +137,6 @@
       - Type: war
       - Classifier: leave blank 
       - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/nexusTest/target/jenkins-app-v2.war)
-
-
-
-
 
 # 5. Jenkins Tomcat Integrations: 
  - We do this intergration using a plugin call 'Deploy to Container'  
