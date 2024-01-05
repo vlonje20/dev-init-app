@@ -29,6 +29,12 @@
 
 	</properties>
 
+	<properties>
+        <!-- other properties -->
+        <sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
+        <!-- other properties -->
+    </properties>
+
 	<dependencies>
 		
 		<dependency>
