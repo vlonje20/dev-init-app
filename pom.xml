@@ -17,6 +17,7 @@
 	</organization>
 
 	<properties>
+		
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
@@ -26,14 +27,10 @@
 		<sonar.password>drama20</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
+		<sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
+        
 	</properties>
 
-	<properties>
-        <!-- other properties -->
-        <sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
-        <!-- other properties -->
-    </properties>
 
 	<dependencies>
 		
