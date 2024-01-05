@@ -32,7 +32,7 @@
   - Select 'Build Now'
 
 
-# 3. Jenkins SonarQube Intergrations (Code Quality) 
+# 3. Jenkins SonarQube Intergrations: (Code Quality) 
   # On GitHub:  
   - Make sure your SonarQube Server is running 
   - Go to the Build Script (pom.xml) in the GitHub Repository
@@ -48,9 +48,55 @@
   - Then Save 
   - Build Now    
 
-# 4. Jenkins Tomcat Intergrations 
+# 4. Jenkins Nexus Integration: (Artifact Backup)
+  - Configure Nexus: 
+   (a) Repositories
+    - Sign in to nexus and click 'Server administration and configuration' 
+    - Open Repository ==> Create Repository ==> maven2 (hosted):
+       - Name: your repository name 
+       - Version policy: Mixed
+       - Layout policy: Strict
+       - Content Disposition: Inline
+       - Blob store: default
+       - Deployment policy: Allow redeploy
+    - Click 'Create repository'
+
+    (b) Users: 
+    - Click 'Create local user'
+    - Fill out the form 
+    - At the bottom under 'Roles', select nx-admin from column 1 and pushed to column 2 
+    - Then click 'Create local user'
+
+  - Configure Jenkins: 
+    - In Jenkins, go to Dashboard ==> Manage Jenkins ==> Plugins 
+    - Available Plugins and search 'Nexus Artifact Uploader'
+    - Install without restart 
+
+    - Go to your project ==> Configure ==> Build Steps ==> Add build steps
+    - Nexus artifact uploader 
+      - Nexus artifact uploader
+      - Nexus Details
+        - Nexus Version: NEXUS3
+        - Protocol: HTTP
+        - Nexus UR: your nexus URL without the http/https: (eg: localhost:8081)
+        - Credentials: use the user credentials you earlier configured in Nexus
+        - GroupId: your project name (eg: jenkins-app-v2)
+        - Version: your version number (eg: 1.0-SNAPSHOT)
+        - Repository: The repository you created in Nexus 
+
+    - Artifacts ==> Add
+      - ArtifactId: your ID (It can be your project name eg: jenkins-app-v2)
+      - Type: war
+      - Classifier: leave blank 
+      - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/nexusTest/target/jenkins-app-v2.war)
+
+
+
+
+
+# 5. Jenkins Tomcat Integrations: 
  - We do this intergration using a plugin call 'Deploy to Container'  
- - In Jenkins go to Dashboard ==> Manage Jenkins ==> Manage Plugins ==> 
+ - In Jenkins go to Dashboard ==> Manage Jenkins ==> Plugins ==> 
    Available ==> Search "Deploy to container"
  - Select and install
 
@@ -59,7 +105,8 @@
 
  - Under 'Deploy war/ear to a container'
    target/*.war              /*OR   
-   target/yourBuildscript                                           
+   target/yourBuildscript      
+                                         
 
  - Add Container ==> Chose Tomcat Version (It should be the latest stable version) 
 
@@ -115,5 +162,9 @@ Build Triggers:
 
 
 
+when you build using maven 
+allen.war = microser
+allen.ear = enterprise  
+allen.jar =
 
 
