@@ -12,12 +12,12 @@
 	<description>CICD jenkins Java Project</description>
 
 	<organization>
-		<name>Allen Technologies</name>
-		<url>http://allentechnologies.com/</url>
+		<name>Vin Technologies</name>
+		<url>http://vintech.com/</url>
 	</organization>
 
 	<properties>
-		
+
 		<jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
@@ -28,6 +28,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
+		<sonar.projectName>jenkins-app-v1</sonar.projectName>
         
 	</properties>
 
