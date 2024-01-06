@@ -22,6 +22,13 @@ CICD Project with Jenkins:
 - Java 
   https://www.java.com/download/ie_manual.jsp 
 
+# Tools to Install:
+- Jenkins 
+- Tomcat 
+- Docker:
+   - SonarQube (as a Container) 
+   - Nexus (as a Container)
+
 # Tools Needed:
 - GitHub (git) = SCMT  
 - Jenkins = (CICD)
