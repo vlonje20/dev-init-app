@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>maven-web-application</name>
+	<name>jenkins-app</name>
 
 	<description>CICD jenkins Java Project</description>
 
@@ -28,7 +28,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
-		<sonar.projectName>jenkins-app</sonar.projectName>
+		<sonar.projectName>jenkins-app-v1.0.0</sonar.projectName>
         
 	</properties>
 
@@ -113,7 +113,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>jenkins-app-v2</finalName>
+		<finalName>jenkins-app-v1.0.0</finalName>
 		
 		<plugins>
 			<plugin>

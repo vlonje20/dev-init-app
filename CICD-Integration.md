@@ -2,34 +2,35 @@
 ===========================
 
 # 1. Jenkins GitHub Intergrations:  
-  - Go to Dashboard and create a 'new project' (+ New Item)
-  - Enter 'jenkins project' name and select Freestyle project and click OK
-  - Under Github project/Project url, paste your github project url  
-  - Under "Source Code Management", select Git 
-  - Copy the GitHub project URL and paste on Repository URL. 
+  - In Jenkins, Go to Dashboard and create a 'new project' (+ New Item).
+  - Enter 'jenkins project' name and select 'Freestyle project' and click OK.
+  - Under Github project/Project url, paste your 'Github Project URL'  
+  - Under "Source Code Management", select Git. 
+  - Copy the 'GitHub Repository URL' and paste on Repository URL. 
   - Set your Credentials: 
-    - Under Credentials, select '+Add' then Jenkins
-    - Leave Domain, Kind and Scope as default
-    - Under username, input your jenkins username and password
-    - Input your description and select Add
-  - Now Under Credentials replace -none- with your credentials 
-  - Under 'Branches to build' input your production branch 
-  - Now Save 
+    - Under Credentials, select '+Add' then Jenkins.
+    - Leave Domain, Kind and Scope as default.
+    - Under username, input your jenkins username and password.
+    - Input your description and select Add.
+  - Now Under Credentials replace -none- with your credentials. 
+  - Under 'Branches to build' input the branch you want to build from. 
+  - Now 'Save' 
   - Select 'Build Now'
 
 
-# 2. Jenkins Maven Intergrations:  
-  - Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
-  - Under Name, write maven+highest-version 
-    For instance maven3.9.6
-  - Now Save
+# 2. Jenkins Maven Intergrations: 
+  - Configure Maven: 
+    - In Jenkins, Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
+    - Under Name, write maven+highest-version (eg: maven3.9.6)
+    - Now 'Save'
 
-  - Dashboard ==> Project ==> Configure ==> Build Steps ==> 
-    Add Build Step ==> Invoke-top-level Maven Targets 
-  - Under 'Maven Version', select your preconfigured maven version.
-  - Under 'Goal' write 'clean package' 
-  - Now Save
-  - Select 'Build Now'
+  - Build with Maven: 
+    - In Jenkins, Dashboard ==> Project ==> Configure ==> Build Steps ==> 
+      Add Build Step ==> Invoke-top-level Maven Targets 
+    - Under 'Maven Version', select your preconfigured maven version.
+    - Under 'Goal' write 'clean package' 
+    - Now 'Save'
+    - Select 'Build Now'
 
 
 # 3. Jenkins SonarQube Intergrations: (Code Quality) 
@@ -37,7 +38,7 @@
   - Generate a Token:
     - Go to Administration ==> Click the dropdown on Security ==> Users
     - Click under 'Token'
-    - Enter Name under 'Name', Chose Duration then click Generate 
+    - Enter Name under 'Name', Chose Duration then click 'Generate' 
     - Copy Token and Backup for you won't be able to see or copy it again. 
 
     OR
@@ -59,7 +60,9 @@
     <sonar.projectKey>your-sonarqube-token</sonar.projectKey>
     <sonar.projectName>your-project-name</sonar.projectName>
 
+  - your-project-name: This is what will appear in SonarQube
   - Commit the changes. 
+
 
   # On Jenkins: 
   - Download and Install SonarQube Plugins: 
@@ -83,17 +86,17 @@
         - Password: your-sonarqube-token
         - ID: your-ID (eg: jenkins-sonar-cred)
         - Description: your-Description (eg: jenkins-sonar-cred)
-        - Then click Add 
+        - Then click 'Add' 
       - Server authentication token:
         - Select what you just created.
-    - Now Save 
+    - Now 'Save' 
 
   - Run Your Job:
     - Go to Dashboard ==> yourProject ==> Configure ==> Build Steps ==> Add Build Step ==> 
       Invoke-top-level Maven Targets
     - Under 'Maven Version', select your preconfigured maven version.
     - Under 'Goal' write 'sonar:sonar'
-    - Then Save 
+    - Then 'Save' 
     - Build Now    
 
 # 4. Jenkins Nexus Integration: (Artifact Backup)
@@ -128,30 +131,31 @@
         - Protocol: HTTP
         - Nexus UR: your nexus URL without the http/https: (eg: localhost:8081)
         - Credentials: use the user credentials you earlier configured in Nexus
-        - GroupId: your project name (eg: jenkins-app-v2)
+        - GroupId: your project name - what will appear in nexus (eg: jenkins-app): 
         - Version: your version number (eg: 1.0-SNAPSHOT)
         - Repository: The repository you created in Nexus 
 
     - Artifacts ==> Add
-      - ArtifactId: your ID (It can be your project name eg: jenkins-app-v2)
+      - ArtifactId: your ID. Subfolder inside your 'GroupId' (Your project name version. eg: jenkins-app-v1.0.0)
       - Type: war
       - Classifier: leave blank 
-      - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/nexusTest/target/jenkins-app-v2.war)
+      - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
 
 # 5. Jenkins Tomcat Integrations: 
  - We do this intergration using a plugin call 'Deploy to Container'  
  - In Jenkins go to Dashboard ==> Manage Jenkins ==> Plugins ==> 
    Available ==> Search "Deploy to container"
- - Select and install
+ - Select and install without restart
 
  - Dashboard ==> Project ==> Configure ==> Post-Build-Actions ==> Add Post-Build-Action ==> 
    Deploy war/ear to container ==>
 
  - Under 'Deploy war/ear to a container'
-   target/*.war              /*OR   
-   target/yourBuildscript      
+   - WAR/EAR files: 
+     target/*.war              /*OR   
+     target/your-built-artifact.war 
+   - Context path: leave blank   
                                          
-
  - Add Container ==> Chose Tomcat Version (It should be the latest stable version) 
 
  - Under Containers/Tomcat 9.x Remote 
@@ -162,7 +166,7 @@
  # To create your tomcat credentials: 
  - On your terminal do the following: 
 
-     sudo nano /etc/tomcat9/tomcat-users.xml 
+     $ sudo nano /etc/tomcat9/tomcat-users.xml 
 
  - Paste the following just above the </tomcat-users> closing.
 
@@ -170,7 +174,10 @@
      <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 
  - Under Tomcat URL 
-   - Copy and paste your tomcat url
+   - Copy and paste your Tomcat URL
+
+ - Save 
+ - Build Now
 
 
 # 6. Email Notification 
@@ -203,12 +210,3 @@ Build Triggers:
      Content type = (application/json)
      Payload URL = Paste the Jenkins URL with the extension github-webhook/ 
      (e.g. http://18.218.211.120:8080/github-webhook/)
-
-
-
-when you build using maven 
-allen.war = microser
-allen.ear = enterprise  
-allen.jar =
-
-

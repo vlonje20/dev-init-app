@@ -55,8 +55,8 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Code Scanner - Snyk</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/Snyk.jpg" alt="Airport" style="width:100%">
+                    <div class="w3-display-topleft w3-black w3-padding">Code Scanner - SonarQube</div>
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sonarqube.png" alt="Airport" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
@@ -82,7 +82,7 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Engineer</div>
+                    <div class="w3-display-topleft w3-black w3-padding">Security Engineer</div>
                     <img src="https://vin-project.s3.amazonaws.com/project-images/Intramuros.JPEG" alt="Artist" style="width:99%">
                 </div>
             </div>
@@ -130,21 +130,21 @@
                 <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sylvia.png" alt="Jane" style="width:100%">
                 <h3>Sylvia Ngum Ebune</h3>
                 <p class="w3-opacity">GitHub Administrator</p>
-                <p>She is responsible for the day-to-day operations of the company. The backbone of the company</p>
+                <p>Meet the COO. She is responsible for the day-to-day operations of the company. The backbone of the company.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://vin-project.s3.amazonaws.com/project-images/allen.JPEG" alt="Mike" style="width:100%">
                 <h3>Allen Nebota</h3>
                 <p class="w3-opacity">Jenkins Administrator</p>
-                <p>He is in charge of the company's technological development, innovation, and IT infrastructure..</p>
+                <p>He is in charge of the company's security, technological development, innovation, and IT infrastructure.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://vin-project.s3.amazonaws.com/project-images/the+staff.JPEG" alt="Dan" style="width:100%">
                 <h3>Management</h3>
                 <p class="w3-opacity">The Staff</p>
-                <p>The grease and plugs of the company. They ensure the overall smooth running of the company</p>
+                <p>The grease and plugs of the company. They ensure the overall smooth running of the company.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
         </div>
