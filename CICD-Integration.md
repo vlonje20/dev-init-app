@@ -34,7 +34,7 @@
 
 
 # 3. Jenkins SonarQube Intergrations: (Code Quality) 
-  # On SonarQube:
+  * On SonarQube:
   - Generate a Token:
     - Go to Administration ==> Click the dropdown on Security ==> Users
     - Click under 'Token'
@@ -82,8 +82,7 @@
         - Domain: leave as it is
         - Kind: Secret text 
         - Scope: leave as it is 
-        - Username: your-username (eg: admin)
-        - Password: your-sonarqube-token
+        - Secret: your-sonarqube-token
         - ID: your-ID (eg: jenkins-sonar-cred)
         - Description: your-Description (eg: jenkins-sonar-cred)
         - Then click 'Add' 
@@ -171,6 +170,8 @@
  - Paste the following just above the </tomcat-users> closing.
 
      <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>
+
+     
      <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 
  - Under Tomcat URL 
@@ -210,3 +211,7 @@ Build Triggers:
      Content type = (application/json)
      Payload URL = Paste the Jenkins URL with the extension github-webhook/ 
      (e.g. http://18.218.211.120:8080/github-webhook/)
+
+
+
+ 
