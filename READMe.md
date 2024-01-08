@@ -22,6 +22,11 @@ CICD Project with Jenkins:
 - Java 
   https://www.java.com/download/ie_manual.jsp 
 
+
+- Install ubuntu on windows: 
+  https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu
+  
+
 # Tools to Install:
 - Jenkins 
 - Tomcat 

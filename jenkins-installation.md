@@ -1,4 +1,4 @@
-# Jenkins Installation
+ Jenkins Installation
 
 # Install Jenkins on a server: 
 https://www.jenkins.io/doc/book/installing/linux/#debianubuntu 
@@ -90,10 +90,47 @@ sudo apt-get install jenkins
   - Add the following line to use Google DNS:
     nameserver 8.8.8.8
 
+  - To Save: 
+      - Ctrl + X 
+      - Y 
+      - Enter 
+
+
   - Save the file and restart Jenkins service:
     $ sudo systemctl restart jenkins
 
   - Go to Jenkins and try the integration again 
+
+--------------------------------------------------------------------- 
+
+- How to change Jenkins default portNumber: 
+  - Locate the Jenkins configuration file
+    $ cd /etc/default/ 
+    $ sudo nano jenkins  
+    $ sudo nano /etc/default/jenkins 
+  
+  - Look for the line that specifies the HTTP_PORT variable. 
+    For example, it may look like HTTP_PORT=8080.
+
+  - Change the port number to the desired value. 
+    Make sure it is a valid and available port.
+
+  - Add a new line below HTTP_PORT=-1 to set your desired port using 
+    the --httpPort option. For example:
+
+    HTTP_PORT=-1
+    JENKINS_ARGS="--httpPort=8081"
+
+  - Save the changes to the configuration file and exit the text editor.
+  - Restart the Jenkins service to apply the changes. 
+    $ sudo systemctl restart jenkins
+
+  - Edit the 'jenkins.service' file:
+    $ sudo nano /lib/systemd/system/jenkins.service
+
+  - Change the port on the file 
+      [Service]
+      Environment="JENKINS_PORT=8081"
 
 
 To get the administrator password:
