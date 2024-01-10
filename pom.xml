@@ -101,13 +101,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>jenkins CICD Releases Nexus Repository</name>
-	      <url>http://192.168.254.106:8082/repository/jenkins-cicd-release/</url>
+	      <url>http://localhost:8081/repository/jenkins-app-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>jenkins CICD Snapshot Nexus Repository</name>
-	      <url>http://192.168.254.106:8082/repository/jenkins-cicd-snapshot/</url>
+	      <url>http://localhost:8081/repository/jenkins-app-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
