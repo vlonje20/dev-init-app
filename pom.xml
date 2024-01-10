@@ -100,14 +100,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>jenkins-app-repository</name>
-	      <url>http://172.27.192.1:8082/repository/jenkins-app-release/</url>
+	      <name>jenkins CICD Releases Nexus Repository</name>
+	      <url>http://192.168.254.106:8082/repository/jenkins-cicd-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>jenkins-app-snapshot</name>
-	      <url>http://172.27.192.1:8082/repository/jenkins-app-snapshot/</url>
+	      <name>jenkins CICD Snapshot Nexus Repository</name>
+	      <url>http://192.168.254.106:8082/repository/jenkins-cicd-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
