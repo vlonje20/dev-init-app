@@ -100,14 +100,14 @@
 	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
-	      <name>jenkins-app</name>
-	      <url>http://localhost:8081/repository/jenkins-app/</url>
+	      <name>jenkins-app-repository</name>
+	      <url>http://172.27.192.1:8082/repository/jenkins-app-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>jenkins-app</name>
-	      <url>http://localhost:8081/repository/jenkins-app/</url>
+	      <name>jenkins-app-snapshot</name>
+	      <url>http://172.27.192.1:8082/repository/jenkins-app-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
