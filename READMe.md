@@ -76,7 +76,8 @@ CICD Project with Jenkins:
 
 =======
 # Note:
-  - Still working on the project 
+  - Still working on the project
+  - Have completed with the freestyle project 
   - Project src-code: w3school account: (mamicah2020@gmail.com)
   - Change made by sylvia to practice how to push and pull a  file from GitHub
 >>>>>>> bb0d8f4dba8845cd7a58b4640ab91f678352cb49
