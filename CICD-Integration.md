@@ -183,7 +183,26 @@
          - In Jenkins go to Dashboard ==> Project ==> Configure ==> Post-Build-Action 
          - Add Post-Build-Action ==> Email Notification ==> Emails
          - Save
-         - Build Now  
+         - Build Now 
+         - Note: This on sends emails when a build fails, becomes unstable or returns to stable.  
+
+
+# 7. Configuring Projects in Jenkins: 
+- General: 
+     - Discard old builds: 
+         - Days to keep builds: you can leave blank 
+         - Max # of builds to keep: Chose your number (eg: 3)
+     - Save 
+
+- Build Triggers: 
+     - Chose Poll SCM 
+     - Schedule:
+          - * * * * * (* 5 times) 
+     - Save 
+     - You can check below to see the 'cron syntax'
+
+- Build Environment: 
+     - Add timestamps to the Consol Output 
 
 
 Build Triggers: 
@@ -201,7 +220,15 @@ Build Triggers:
 - Poll SCM           
    - Jenkins trigger a build based on changes in the source codes. 
      (Generally Recommended) 
-   - Jenkins pull the changes from GitHub.   
+   - Jenkins pull the changes from GitHub. 
+   - Cron Syntax: 
+        H/15 * * * *   # Check every 15 minutes
+        * * * * *      # Minute
+        * * * * *      # Hour
+        * * * * *      # Day of month
+        * * * * *      # Month
+        * * * * 5      # Day of week (5 is Friday, adjust as needed)
+  
 
 - GitHub Web Hook    
    - Jenkins do a build when there is any changes in the source code 
@@ -211,4 +238,30 @@ Build Triggers:
      Content type = (application/json)
      Payload URL = Paste the Jenkins URL with the extension github-webhook/ 
      (e.g. http://18.218.211.120:8080/github-webhook/)
- 
+
+
+
+
+# Jenkins Pipeline Jobs:
+   - Dashboard ==> + New Item ==> 
+   - Project Name ==> Pipeline ==> OK
+
+# Configure Pipeline Jobs: 
+   - Project Name ==> Configure 
+   - Genaral: 
+        - Discard old builds: 
+            - Strategy: Log Rotation 
+            - Dayes to keep buiilds: (chose of leave blank for less than a day)
+            - Max 3 of builds to keep: (eg: 3)
+
+   - This project is parameterized:
+        - Create parameter 
+
+   - Build Triggers: 
+        - Poll SCM 
+        - Schedule: * * * * * (5 times with space)
+
+# Pipeline 
+   - Definition: 
+        - Pipeline script: 
+
