@@ -15,10 +15,8 @@
             <!-- Float links to the right. Hide them on small screens -->
             <div class="w3-right w3-hide-small">
                 <a href="#home" class="w3-bar-item w3-button">Home</a>
-                <a href="#manila city" class="w3-bar-item w3-button">Manila</a>
-                <a href="#BGC" class="w3-bar-item w3-button">BGC</a>
-                <a href="#filinvest" class="w3-bar-item w3-button">Filinvest</a>
-                <a href="#makati" class="w3-bar-item w3-button">Makati</a>
+                <a href="#team" class="w3-bar-item w3-button">Team</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
             </div>
         </div>
     </div>
@@ -44,25 +42,25 @@
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">CICD Tool - Jenkins</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins.jpg" alt="Sports" style="width:100%">
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins.jpg" alt="CICD" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">SCM Tool - GitHub</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/github.png" alt="Bridge" style="width:100%">
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/github.png" alt="SCM" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Code Scanner - SonarQube</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sonarqube.png" alt="Airport" style="width:100%">
+                    <div class="w3-display-topleft w3-black w3-padding">Code Scanner - Snyk</div>
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sonarqube.png" alt="Code-Scanner" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">Web Server - Apache Tomcat</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/tomcat.png" alt="Party" style="width:100%">
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/tomcat.png" alt="Web-Host" style="width:100%">
                 </div>
             </div>
         </div>
@@ -71,18 +69,18 @@
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">Code Builder - Apache Maven</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/maven.png" alt="Girls" style="width:99%">
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/maven.png" alt="Builder" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-topleft w3-black w3-padding">Image Builder - Docker</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/docker.png" alt="Cute" style="width:99%">
+                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/docker.png" alt="Containerization" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Security Engineer</div>
+                    <div class="w3-display-topleft w3-black w3-padding">Engineer</div>
                     <img src="https://vin-project.s3.amazonaws.com/project-images/Intramuros.JPEG" alt="Artist" style="width:99%">
                 </div>
             </div>
@@ -119,7 +117,7 @@
 
         <div class="w3-row-padding w3-bright">
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://vin-project.s3.amazonaws.com/project-images/vin.jpeg" alt="John" style="width:100%">
+                <img src="https://vin-project.s3.amazonaws.com/project-images/vin.jpeg" alt="Vin" style="width:100%">
                 <h3>Vin Lonje</h3>
                 <p class="w3-opacity">Project Coordinator</p>
                 <p>Meet the founder and chief executive officer of our company. He is the pillar and the backbone of the company.
@@ -127,28 +125,27 @@
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sylvia.png" alt="Jane" style="width:100%">
+                <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sylvia.png" alt="Sylvia" style="width:100%">
                 <h3>Sylvia Ngum Ebune</h3>
-                <p class="w3-opacity">GitHub Administrator</p>
-                <p>Meet the COO. She is responsible for the day-to-day operations of the company. The backbone of the company.</p>
+                <p class="w3-opacity">Solutions Architech Engineer</p>
+                <p>She is responsible for the day-to-day operations of the company. The backbone of the company</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://vin-project.s3.amazonaws.com/project-images/allen.JPEG" alt="Mike" style="width:100%">
+                <img src="https://vin-project.s3.amazonaws.com/project-images/allen.JPEG" alt="Allen" style="width:100%">
                 <h3>Allen Nebota</h3>
-                <p class="w3-opacity">Jenkins Administrator</p>
-                <p>He is in charge of the company's security, technological development, innovation, and IT infrastructure.</p>
+                <p class="w3-opacity">Sr. Security Engineer</p>
+                <p>He is in charge of the company's security, technological development, innovation, and IT infrastructure..</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://vin-project.s3.amazonaws.com/project-images/the+staff.JPEG" alt="Dan" style="width:100%">
-                <h3>Management</h3>
-                <p class="w3-opacity">The Staff</p>
-                <p>The grease and plugs of the company. They ensure the overall smooth running of the company.</p>
+                <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/flora.jpg" alt="Flora" style="width:100%">
+                <h3>Flora Yuyuum</h3>
+                <p class="w3-opacity">DevOps Engineer</p>
+                <p>She is incharge of bridging the gap between software development and operations through automation.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
         </div>
-
 
 
         <!-- Contact Section -->
