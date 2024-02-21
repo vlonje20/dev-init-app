@@ -4,4 +4,40 @@
 - To get our CHA 3tier Project link, see [CHA 3tier Project](https://docs.google.com/document/d/1U36YbHV87jT-AwL8ooKNgRQkZB2BmiV_OzCqpSlY-BY/edit)
 - To get our canva project link, see [Canva Project](https://www.canva.com/design/DAF5sEif3jo/804scKmsxlXJ040DITFBpw/edit?utm_content=DAF5sEif3jo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - To get AWS VPC Private CIDR Block link, see [CIDR Blocks from the Private IPv4 Address Ranges](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html)
-- To learn more about CIDR ranges, see [AN INTERACTIVE IP ADDRESS AND CIDR RANGE VISUALIZER](https://cidr.xyz/) 
+- To learn more about CIDR Block ranges, see [AN INTERACTIVE IP ADDRESS AND CIDR RANGE VISUALIZER](https://cidr.xyz/) 
+
+
+## Scripting: 
+#### How to run a script
+- Create a new file and paste the script into it (e.g., userdata.sh).
+  nano userdata.sh 
+- Make the script executable by running the following command in the terminal: <br>
+  $ chmod +x userdata.sh.
+- Make the scrip executable by running the following command: <br>
+  $ sudo ./userdata.sh
+- Run the script with the following commands: <br>
+  $ ./userdata.sh OR <br> 
+  $ sh userdata.sh
+
+## Sample Scripts 
+### Ubuntu Server Update: 
+----- Start of script -----
+
+#!/bin/bash
+##### To make script non interactive 
+export DEBIAN_FRONTEND=noninteractive
+
+##### To update and upgrade ubuntu
+apt update
+apt upgrade -y
+
+##### To install Jaja 
+apt install default-jre -y
+apt install openjdk-8-jdk -y
+
+##### Install Other tools 
+apt install net-tools
+apt install libuser -y  
+snap install emacs --classic 
+
+----- End of script -----
