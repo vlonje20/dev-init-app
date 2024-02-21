@@ -20,24 +20,9 @@
   $ sh userdata.sh
 
 ## Sample Scripts 
-### Ubuntu Server Update: 
------ Start of script -----
-
-#!/bin/bash
-##### To make script non interactive 
-export DEBIAN_FRONTEND=noninteractive
-
-##### To update and upgrade ubuntu
-apt update
-apt upgrade -y
-
-##### To install Jaja 
-apt install default-jre -y
-apt install openjdk-8-jdk -y
-
-##### Install Other tools 
-apt install net-tools
-apt install libuser -y  
-snap install emacs --classic 
-
------ End of script -----
+- File 
+- Scripts 
+- Codes: = an artifact  
+   - source code 
+   - build script 
+   - test cases  
