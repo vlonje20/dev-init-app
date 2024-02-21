@@ -7,7 +7,7 @@
 
 ## Install applications needed: 
 ### Install git: <br>
-  To install git see [git install](https://git-scm.com/downloads) 
+  To install git, see [git install](https://git-scm.com/downloads) 
 
   - Configure git: 
     * _git config --global user.name "gitHub-User-Name"_
