@@ -9,12 +9,10 @@
 
 ## Scripting: 
 #### How to run a script
-- Create a new file and paste the script into it (e.g., userdata.sh).
+- Create a new file and paste the script into it (e.g., userdata.sh). <br>
   nano userdata.sh 
 - Make the script executable by running the following command in the terminal: <br>
   $ chmod +x userdata.sh.
-- Make the scrip executable by running the following command: <br>
-  $ sudo ./userdata.sh
 - Run the script with the following commands: <br>
   $ ./userdata.sh OR <br> 
   $ sh userdata.sh
