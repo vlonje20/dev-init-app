@@ -1,55 +1,52 @@
-CICD Project with Jenkins:  
-==========================
+# CICD Project with Jenkins:  
 
-# Install applications needed: 
-- Install git: 
-  https://git-scm.com/downloads 
+## Install applications needed: 
+### Install git: <br>
+  To install git see [git install](https://git-scm.com/downloads) 
 
   - Configure git: 
-    - git config --global user.name "gitHub-User-Name"
-    - git config --global user.email "gitHubEmail"
+    * _git config --global user.name "gitHub-User-Name"_
+    * _git config --global user.email "gitHubEmail"_
 
-- Create an account with gitHub: 
-  https://github.com/ 
+### Create an account with gitHub: 
+  To create an account in github, see [GitHub Account](https://github.com/) 
 
-- Docker Engine: 
-  - Docker Desktop 
-  https://docs.docker.com/desktop/install/windows-install/ 
+### Install Docker Engine: 
+  To install Docker Desktop on Windows, see [Install Docker On Windows](https://docs.docker.com/desktop/install/windows-install/) 
 
-  - docker ps: test whether docker is installed 
-  - docker --version 
+  - _docker ps_: test whether docker is installed 
+  - _docker --version_: Check docker version. 
 
-- Java 
-  https://www.java.com/download/ie_manual.jsp 
+### Install Java on Windows: 
+  To install Java on Windows, see [Install Java On Windows](https://www.java.com/download/ie_manual.jsp) 
 
 
-- Install ubuntu on windows: 
-  https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu
+### Install ubuntu on Windows: 
+  To install ubuntu on Windows, see [Install ubuntu On Windows](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu)
   
 
-# Tools to Install:
+## Tools to Install:
 - Jenkins 
 - Tomcat 
-- Docker:
+- Docker: <br>
    - SonarQube (as a Container) 
    - Nexus (as a Container)
 
-# Tools Needed:
+## Tools Needed:
 - GitHub (git) = SCMT  
 - Jenkins = (CICD)
 - Maven = Build/package 'Java applications' 
 - Sonarqube = scan codes 
 - Nexus = Backup our build artifact (optional)
 - Tomcat = (to host our application)
-- Docker = to create docker images
+- Docker = to create docker images <br>
            to run containers 
 - DockerHub = to backup our images  
 
-
-# DevOps Tools: 
-- git = versioning 
-- github = manage our sorce code 
-- maven = build our code to build artifact 
+## DevOps Tools: 
+- git = for versioning 
+- github = manage our source code 
+- maven = to build artifact 
 - sonarqube = scan out built artifacts 
 - nexus (optional) = store our built artifact
 - tomcat = host our application (web server) 
@@ -61,23 +58,10 @@ CICD Project with Jenkins:
 - ansible = configuration and provisioning 
 - terraform = provisioning 
 
-
- source code 
- build script
-    maven=pom.xml (Project Object Model)  
- test cases (optional)
-
- create docker image 
- Dockerfile
-
-<<<<<<< HEAD
-# App Final Name 
+### App Final Name 
   jenkins-app
 
-=======
-# Note:
+### Note:
   - Still working on the project
   - Have completed with the freestyle project 
   - Project src-code: w3school account: (mamicah2020@gmail.com)
-  - Change made by sylvia to practice how to push and pull a  file from GitHub
->>>>>>> bb0d8f4dba8845cd7a58b4640ab91f678352cb49

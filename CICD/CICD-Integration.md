@@ -1,30 +1,29 @@
 # CICD Jenkins Integration:
-===========================
 
-# 1. Jenkins GitHub Intergrations:  
+## 1. Jenkins GitHub Intergrations:  
   - In Jenkins, Go to Dashboard and create a 'new project' (+ New Item).
   - Enter 'jenkins project' name and select 'Freestyle project' and click OK.
   - Under Github project/Project url, paste your 'Github Project URL'  
   - Under "Source Code Management", select Git. 
   - Copy the 'GitHub Repository URL' and paste on Repository URL. 
-  - Set your Credentials: 
-        - Under Credentials, select '+Add' then Jenkins.
-        - Leave Domain, Kind and Scope as default.
-        - Under username, input your jenkins username and password.
-        - Input your description and select Add.
+  - Set your Credentials: <br> 
+        >- Under Credentials, select '+Add' then Jenkins.
+        >- Leave Domain, Kind and Scope as default.
+        >- Under username, input your jenkins username and password.
+        >- Input your description and select Add.
   - Now Under Credentials replace -none- with your credentials. 
   - Under 'Branches to build' input the branch you want to build from. 
   - Now 'Save' 
   - Select 'Build Now'
 
 
-# 2. Jenkins Maven Intergrations: 
-  - Configure Maven: 
+## 2. Jenkins Maven Intergrations: 
+  ### Configure Maven: 
         - In Jenkins, Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
         - Under Name, write maven+highest-version (eg: maven3.9.6)
         - Now 'Save'
 
-  - Build with Maven: 
+  ### Build with Maven: 
         - In Jenkins, Dashboard ==> Project ==> Configure ==> Build Steps 
         - Add Build Step ==> Invoke-top-level Maven Targets 
         - Under 'Maven Version', select your preconfigured maven version.
@@ -33,9 +32,9 @@
         - Select 'Build Now'
 
 
-# 3. Jenkins SonarQube Intergrations: (Code Quality) 
-  - On SonarQube:
-        - Generate a Token:
+## 3. Jenkins SonarQube Intergrations: (Code Quality) 
+  ### On SonarQube:
+      #### Generate a Token:
              - Go to Administration ==> Click the dropdown on Security ==> Users
              - Click under 'Token'
              - Enter Name under 'Name', Chose Duration then click 'Generate' 
@@ -50,7 +49,7 @@
              - Remember to backup your token 
 
 
-  - On GitHub:  
+  ### On GitHub:  
         - Go to the Build Script (pom.xml) in the GitHub Repository
         - Go to 'Properties' and add/edit the following: 
     
@@ -64,7 +63,7 @@
         - Commit the changes. 
 
 
-  - On Jenkins: 
+  ### On Jenkins: 
         - Download and Install SonarQube Plugins: 
              - Dashboard ==> Manage Jenkins ==> Plugins
              - Available Plugins ==> SonarQube Scanner for Jenkins 
@@ -98,7 +97,7 @@
              - Then 'Save' 
              - Build Now    
 
-# 4. Jenkins Nexus Integration: (Artifact Backup)
+## 4. Jenkins Nexus Integration: (Artifact Backup)
         - Configure Nexus: 
         (a) Repositories
              - Sign in to nexus and click 'Server administration and configuration' 
@@ -125,7 +124,7 @@
              - Go to your project ==> Configure ==> Build Steps ==> Add build steps
              - Nexus artifact uploader 
              - Nexus artifact uploader
-             - Nexus Details
+             - Nexus Details 
                   - Nexus Version: NEXUS3
                   - Protocol: HTTP
                   - Nexus UR: your nexus URL without the http/https: (eg: localhost:8081)
@@ -140,7 +139,7 @@
                   - Classifier: leave blank 
                   - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
 
-# 5. Jenkins Tomcat Integrations: 
+## 5. Jenkins Tomcat Integrations: 
         - We do this intergration using a plugin call 'Deploy to Container'  
              - In Jenkins go to Dashboard ==> Manage Jenkins ==> Plugins ==> 
              - Available ==> Search "Deploy to container"
@@ -163,7 +162,7 @@
               - use your tomcat credentials that you will configure in the 'tomcat-users.xml'
               - Follow the steps below to create your user in 'tomcat-users.xml'
 
- # To create your tomcat credentials: 
+ ### To create your tomcat credentials: 
         - On your terminal do the following: 
           $ sudo nano /etc/tomcat9/tomcat-users.xml 
 
@@ -179,7 +178,7 @@
          - Build Now
 
 
-# 6. Email Notification 
+## 6. Email Notification 
          - In Jenkins go to Dashboard ==> Project ==> Configure ==> Post-Build-Action 
          - Add Post-Build-Action ==> Email Notification ==> Emails
          - Save
@@ -187,7 +186,7 @@
          - Note: This on sends emails when a build fails, becomes unstable or returns to stable.  
 
 
-# 7. Configuring Projects in Jenkins: 
+## 7. Configuring Projects in Jenkins: 
 - General: 
      - Discard old builds: 
          - Days to keep builds: you can leave blank 
@@ -205,17 +204,16 @@
      - Add timestamps to the Consol Output 
 
 
-Build Triggers: 
-===============
+### Build Triggers: 
 - We use build triggers to automate the process.  
 - Build Now          
   - This is a manual build 
 
 - Build Periodically 
-  - Jenkins uses a timer to trigger a build. 
-    (***** build every minute) 
-    (H**** build every hour) 
-    (Best for Database backup)
+  - Jenkins uses a timer to trigger a build.<br> 
+    (***** build every minute) <br>
+    (H**** build every hour) <br>
+    (Best for Database backup) <br>
 
 - Poll SCM           
    - Jenkins trigger a build based on changes in the source codes. 
@@ -238,30 +236,3 @@ Build Triggers:
      Content type = (application/json)
      Payload URL = Paste the Jenkins URL with the extension github-webhook/ 
      (e.g. http://18.218.211.120:8080/github-webhook/)
-
-
-
-
-# Jenkins Pipeline Jobs:
-   - Dashboard ==> + New Item ==> 
-   - Project Name ==> Pipeline ==> OK
-
-# Configure Pipeline Jobs: 
-   - Project Name ==> Configure 
-   - Genaral: 
-        - Discard old builds: 
-            - Strategy: Log Rotation 
-            - Dayes to keep buiilds: (chose of leave blank for less than a day)
-            - Max 3 of builds to keep: (eg: 3)
-
-   - This project is parameterized:
-        - Create parameter 
-
-   - Build Triggers: 
-        - Poll SCM 
-        - Schedule: * * * * * (5 times with space)
-
-# Pipeline 
-   - Definition: 
-        - Pipeline script: 
-
