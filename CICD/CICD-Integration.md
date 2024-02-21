@@ -7,10 +7,10 @@
   - Under "Source Code Management", select Git. 
   - Copy the 'GitHub Repository URL' and paste on Repository URL. 
   - Set your Credentials: <br> 
-        >- Under Credentials, select '+Add' then Jenkins.
-        >- Leave Domain, Kind and Scope as default.
-        >- Under username, input your jenkins username and password.
-        >- Input your description and select Add.
+     - Under Credentials, select '+Add' then Jenkins. <br>
+     - Leave Domain, Kind and Scope as default. <br>
+     - Under username, input your jenkins username and password. <br>
+     - Input your description and select Add. <br>
   - Now Under Credentials replace -none- with your credentials. 
   - Under 'Branches to build' input the branch you want to build from. 
   - Now 'Save' 
