@@ -39,8 +39,9 @@
 - Sonarqube = scan codes 
 - Nexus = Backup our build artifact (optional)
 - Tomcat = (to host our application)
-- Docker = to create docker images <br>
-           to run containers 
+- Docker = <br>
+    - to create docker images <br>
+    - to run containers 
 - DockerHub = to backup our images  
 
 ## DevOps Tools: 
