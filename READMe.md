@@ -1,5 +1,10 @@
 # CICD Project with Jenkins:  
 
+## Monolithic Architecture: 
+   ![jenkins-monolithic](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-monolithic.png)
+## Microservice Architecture:
+   ![jenkins-microservice](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-microservice.png)
+
 ## Install applications needed: 
 ### Install git: <br>
   To install git see [git install](https://git-scm.com/downloads) 
