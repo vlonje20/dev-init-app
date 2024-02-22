@@ -17,10 +17,68 @@
   $ ./userdata.sh OR <br> 
   $ sh userdata.sh
 
-## Sample Scripts 
-- File 
-- Scripts 
-- Codes: = an artifact  
-   - source code 
-   - build script 
-   - test cases  
+## Sample Scripts
+
+=========================================
+### server_update.sh (script)
+#!/bin/bash
+
+# Frontend noninteractive
+export DEBIAN_FRONTEND=noninteractive
+
+# update and upgrade my server
+sudo apt update
+sudo apt upgrade -y
+
+# Java
+
+sudo apt install default-jre -y
+sudo apt install openjdk-11-jdk -y
+
+# Other tools
+sudo apt install net-tools
+sudo apt install libuser -y
+
+============================================
+#### Hostname: 
+- Temporally: 
+  - You become root 
+    $ sudo -i 
+  - Change the hostname 
+    $ hostname <yourHostname>
+    $ exit 
+    $ sudo -i  
+
+- Permanently 
+  - You become root 
+    $ sudo -i 
+  - Change the hostname
+    $ hostnamectl set-hostname <hostname>
+  - Next Edit the /etc/hosts file
+    Delete the old name and input the new name  created.
+    $ nano /etc/hosts
+  
+  - Reboot your virtual machine 
+    $ reboot 
+
+## Create Users: 
+- useradd <userName>
+- adduser <userName>
+  - Become root 
+    $ sudo -i
+  - Create a new user 
+    $ adduser newUser
+
+- Disable password and add newUser to the Sudoers Group 
+  echo "newUser ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/newUser  |OR|
+  echo "newUser ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/newUser
+
+File Editors:
+- touch 
+- echo 
+- vi 
+- vim 
+- nano 
+- emacs 
+
+ivo - pictures - my-pictures 
