@@ -1,5 +1,6 @@
 #!/bin/bash
 # Make script non interactive 
+# Run as root for the first time 
 export DEBIAN_FRONTEND=noninteractive
 
 # Update and upgrade ubuntu

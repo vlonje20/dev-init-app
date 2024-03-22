@@ -21,3 +21,5 @@ echo "$ip_address $new_hostname" | sudo tee -a /etc/hosts
 
 # Display a confirmation message
 echo "Hostname changed successfully." 
+
+     
