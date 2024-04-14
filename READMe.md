@@ -11,7 +11,8 @@ Install git: <br>
 To install git, see [git install](https://git-scm.com/downloads) 
 
 Configure git: 
-```git config --global user.name "gitHub-User-Name"
+```
+git config --global user.name "gitHub-User-Name"
 ```
 ```
 git config --global user.email "gitHubEmail"
@@ -34,7 +35,7 @@ To check docker version:
 docker --version
 ```
 ##
-Install Java on Windows: 
+Install Java on Windows: <br>
 To install Java on Windows, see [Install Java On Windows](https://www.java.com/download/ie_manual.jsp) 
 
 ##
