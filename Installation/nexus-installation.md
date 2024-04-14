@@ -1,10 +1,19 @@
-# Install Nexus as a container: 
+### Install Nexus as a container: 
 
- - sudo docker pull sonatype/nexus3
- - sudo docker volume create --name nexus-data
- - sudo docker run -d -p 8081:8081 --name nexus -v nexus-data:/nexus-data sonatype/nexus3
+Pull the image from DockerHub:
+```
+sudo docker pull sonatype/nexus3
+```
+Create the volume:
+```
+sudo docker volume create --name nexus-data
+```
+Run the container:
+```
+sudo docker run -d -p 8081:8081 --name nexus -v nexus-data:/nexus-data sonatype/nexus3
+```
 
-# Configure it on Browser: 
+### Configure it on Browser: 
 
 - To open on browser:
   - localhost:8081 (if running locally on your PC)
@@ -25,7 +34,7 @@
 - Under 'Configure Anonymous Access' select 'Enable anonymous access'
 
 
-# Nexus Jenkins Integration: 
+### Nexus Jenkins Integration: 
 - Install Nexus Plugins
   - Dashboard ==> Manage Jenkins ==> Plugins 
   - Available Plugins ==> Search 'Nexus Artifact Uploader'
