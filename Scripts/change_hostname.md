@@ -1,3 +1,9 @@
+Create the file:
+```
+change_hostname.sh
+```
+Copy and paste: 
+```
 #!/bin/bash
 # This is a script to permanently change the hostname of an Ubuntu instance.
 # Ask for the new hostname.
@@ -21,5 +27,5 @@ echo "$ip_address $new_hostname" | sudo tee -a /etc/hosts
 
 # Display a confirmation message
 echo "Hostname changed successfully." 
-
+```
      

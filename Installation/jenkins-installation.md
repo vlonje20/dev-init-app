@@ -1,5 +1,5 @@
 ### Install Jenkins on a server:
-Server Type: Ubuntu
+Server Type: Ubuntu <br>
 Check out [Here](https://www.jenkins.io/doc/book/installing/linux/#debianubuntu 
 ) for guidance:  
  
@@ -23,7 +23,7 @@ Disable password and add jenkins to the Sudoers group:
 ```
 echo "jenkins ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/jenkins
 ```
-|OR|
+| OR |
 ```
 echo "jenkins ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/jenkins
 ```
@@ -94,10 +94,14 @@ Get the Administrator Password
 ##
 
 ### Install Jenkins as a container:  
-  - Pull Jenkins Image: 
-    docker pull jenkins/jenkins:lts
-  - Then run the container 
-    docker run -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home --name jenkins -d jenkins/jenkins:lts
+Pull Jenkins Image from DockerHub: 
+```
+docker pull jenkins/jenkins:lts
+```
+Then run the container:
+``` 
+docker run -p 8080:8080 -p 50000:50000 -v jenkins:/var/jenkins_home --name jenkins -d jenkins/jenkins:lts
+```
 
 Login:
 - User=admin 
@@ -110,30 +114,36 @@ Ports:
 ##
 To get the administrator password:
 Get into Jenkins container: 
- - docker exec -it jenkins /bin/bash  OR 
- - docker exec -it jenkins bash
- - cat filepath 
+```
+docker exec -it jenkins /bin/bash
+```
+| OR |
+```
+docker exec -it jenkins bash
+```
+```
+cat filepath 
+```
 
 ##
 
 ### Troubleshooting: 
-  - If jenkins fails to integrate with git under 'Source Code Management'
-    Do the following to resolve this: 
-  - On your terminal, edit the Jenkins DNS configuration file using the command:
-    $ sudo nano /etc/resolv.conf 
+- If jenkins fails to integrate with git under 'Source Code Management' <br>
+  Do the following to resolve this: 
+- On your terminal, edit the Jenkins DNS configuration file using the command:
+```
+sudo nano /etc/resolv.conf 
+```
 
-  - Add the following line to use Google DNS:
-    nameserver 8.8.8.8
-
-  - To Save: 
-      - Ctrl + X 
-      - Y 
-      - Enter 
-
-  - Save the file and restart Jenkins service:
-    $ sudo systemctl restart jenkins
-
-  - Go to Jenkins and try the integration again 
+- Add the following line to use Google DNS:
+```
+nameserver 8.8.8.8
+```
+- Save the file and restart Jenkins service:
+```
+sudo systemctl restart jenkins
+```
+- Go to Jenkins and try the integration again 
 ##
 
 ### How to change Jenkins default portNumber: 
@@ -150,13 +160,13 @@ Or use the direct path:
 sudo nano /etc/default/jenkins 
 ```
   
-- Look for the line that specifies the HTTP_PORT variable. 
+- Look for the line that specifies the HTTP_PORT variable. <br> 
   For example, it may look like HTTP_PORT=8080.
 
-- Change the port number to the desired value. 
+- Change the port number to the desired value. <br> 
   Make sure it is a valid and available port.
 
-- Add a new line below HTTP_PORT=-1 to set your desired port using 
+- Add a new line below HTTP_PORT=-1 to set your desired port using <br> 
   the --httpPort option. For example:
 ```
 HTTP_PORT=-1
@@ -174,8 +184,8 @@ Edit the 'jenkins.service' file:
 sudo nano /lib/systemd/system/jenkins.service
 ```
 
-- Change the port on the file 
-  [Service]
+- Change the port on the file <br>
+  [Service] <br>
   Environment="JENKINS_PORT=8081"
 
 Reload the daemon and restart jenkins service:
@@ -184,7 +194,7 @@ sudo systemctl daemon-reload
 sudo service jenkins restart
 ```
 ##
-If you are using UFW (Uncomplicated Firewall) on Ubuntu, you can allow incoming 
+If you are using UFW (Uncomplicated Firewall) on Ubuntu, you can allow incoming <br> 
 connections to the port with the following command:
 ```
 sudo ufw allow 8081

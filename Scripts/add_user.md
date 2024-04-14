@@ -1,3 +1,9 @@
+Create the file:
+```
+add_user.sh
+```
+Copy and paste: 
+```
 #!/bin/bash
 # This is a script to create a user in Ubuntu
 # Ask for the username and password
@@ -20,3 +26,4 @@ echo "$username ALL=(ALL) NOPASSWD:ALL" | sudo EDITOR='tee -a' visudo
 
 # Display a confirmation message
 echo "User $username created successfully."
+```

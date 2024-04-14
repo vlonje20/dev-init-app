@@ -1,43 +1,54 @@
-# CICD Project with Jenkins:  
+### CICD Project with Jenkins:  
 
-## Monolithic Architecture: 
-   ![jenkins-monolithic](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-monolithic.png)
-## Microservice Architecture:
-   ![jenkins-microservice](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-microservice.png)
+Monolithic Architecture: 
+![jenkins-monolithic](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-monolithic.png)
+Microservice Architecture:
+![jenkins-microservice](https://jenkins-cicd-project.s3.amazonaws.com/project-photos/jenkins-microservice.png)
 
-## Install applications needed: 
-### Install git: <br>
-  To install git, see [git install](https://git-scm.com/downloads) 
+##
+Install applications needed: 
+Install git: <br>
+To install git, see [git install](https://git-scm.com/downloads) 
 
-  - Configure git: 
-    * _git config --global user.name "gitHub-User-Name"_
-    * _git config --global user.email "gitHubEmail"_
+Configure git: 
+```git config --global user.name "gitHub-User-Name"
+```
+```
+git config --global user.email "gitHubEmail"
+```
+Make sure to replace the username and email mwith your gitHube username and email
+##
+Create an account with gitHub: 
+To create an account in github, see [GitHub Account](https://github.com/) 
+##
 
-### Create an account with gitHub: 
-  To create an account in github, see [GitHub Account](https://github.com/) 
+Install Docker Engine: 
+To install Docker Desktop on Windows, see [Install Docker On Windows](https://docs.docker.com/desktop/install/windows-install/) 
 
-### Install Docker Engine: 
-  To install Docker Desktop on Windows, see [Install Docker On Windows](https://docs.docker.com/desktop/install/windows-install/) 
+To test whether docker is installed:
+```
+docker ps
+```
+To check docker version:
+```
+docker --version
+```
+##
+Install Java on Windows: 
+To install Java on Windows, see [Install Java On Windows](https://www.java.com/download/ie_manual.jsp) 
 
-  - _docker ps_: test whether docker is installed 
-  - _docker --version_: Check docker version. 
-
-### Install Java on Windows: 
-  To install Java on Windows, see [Install Java On Windows](https://www.java.com/download/ie_manual.jsp) 
-
-
-### Install ubuntu on Windows: 
-  To install ubuntu on Windows, see [Install ubuntu On Windows](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu)
-  
-
-## Tools to Install:
+##
+Install ubuntu on Windows: 
+To install ubuntu on Windows, see [Install ubuntu On Windows](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu)
+##
+Tools to Install:
 - Jenkins 
 - Tomcat 
 - Docker: <br>
    - SonarQube (as a Container) 
    - Nexus (as a Container)
-
-## Tools Needed:
+##
+Tools Needed:
 - GitHub (git) = SCMT  
 - Jenkins = (CICD)
 - Maven = Build/package 'Java applications' 
@@ -48,8 +59,8 @@
     - to create docker images <br>
     - to run containers 
 - DockerHub = to backup our images  
-
-## DevOps Tools: 
+##
+DevOps Tools: 
 - git = for versioning 
 - github = manage our source code 
 - maven = to build artifact 
@@ -63,11 +74,10 @@
 - kubernetes = manage our containers 
 - ansible = configuration and provisioning 
 - terraform = provisioning 
-
-### App Final Name 
+##
+App Final Name: 
   jenkins-app
-
-### Note:
-  - Still working on the project
-  - Have completed with the freestyle project 
-  - Project src-code: w3school account: (mamicah2020@gmail.com)
+##
+Note:
+Project src-code: w3school account: (mamicah2020@gmail.com)
+##

@@ -1,3 +1,9 @@
+Create the file:
+```
+server_update.sh
+```
+Copy and paste: 
+```
 #!/bin/bash
 # Make script non interactive 
 # Run as root for the first time 
@@ -15,3 +21,4 @@ apt install openjdk-8-jdk -y
 apt install net-tools
 apt install libuser -y  
 snap install emacs --classic
+```

@@ -1,3 +1,9 @@
+Create the file:
+```
+password_generator.sh
+```
+Copy and paste: 
+```
 #!/bin/bash
 # This is a script to generate a random password
 # Ask for the password length
@@ -17,3 +23,4 @@ done
 
 # Display the generated password
 echo "Your password is: $password"
+```

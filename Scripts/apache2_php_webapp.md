@@ -1,3 +1,9 @@
+Create the file:
+```
+apache2_php_webapp.sh
+```
+Copy and paste: 
+```
 #!/bin/bash
 
 # Make script non interactive: 
@@ -38,3 +44,4 @@ echo 'VIN | Welcome to my WORLD | vin-app-v1: ' . $_SERVER['SERVER_ADDR'];
 alt="Mr Dramacydal">" | sudo tee -a /var/www/html/index.php > /dev/null
 
 # <img src="insert pic URL">" | sudo tee -a /var/www/html/index.php > /dev/null
+```
