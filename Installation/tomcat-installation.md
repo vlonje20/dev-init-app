@@ -2,7 +2,7 @@
 
 Become root:
 ``` 
-sudo -i / sudo su - 
+sudo -i
 ```
 Update the server: 
 ```
