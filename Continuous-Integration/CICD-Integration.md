@@ -18,7 +18,7 @@
 ##
 
 2. Jenkins Maven Intergrations: <br>
-``Configure Maven:`` <br> 
+Configure Maven: <br> 
 - In Jenkins, Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
 - Under Name, write maven+highest-version (eg: maven3.9.6)
 - Now 'Save' <br>
@@ -159,9 +159,9 @@ We do this intergration using a plugin call 'Deploy to Container'
 
 To create your tomcat credentials: 
 - On your terminal do the following: 
-  ```
-  sudo nano /etc/tomcat9/tomcat-users.xml 
-  ```
+```
+sudo nano /etc/tomcat9/tomcat-users.xml 
+```
 - Paste the following just above the </tomcat-users> closing.
 ```
 <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>     
