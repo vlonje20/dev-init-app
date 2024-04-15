@@ -55,11 +55,11 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 ```
 Update the server:
 ```
-sudo apt-get update
+sudo apt update
 ```
 Install Jenkins: 
 ```
-sudo apt-get install jenkins
+sudo apt install jenkins
 ```
 
 Check Jenkins status:
