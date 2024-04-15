@@ -147,7 +147,7 @@
    - Add Post-Build-Action ==> 
      - Deploy war/ear to container ==>
      - Under 'Deploy war/ear to a container'
-       - WAR/EAR files: 
+       - WAR/EAR files: <br>
           `target/*.war`  <br> 
           `target/your-built-artifact.war` 
        - Context path: leave blank   
@@ -190,7 +190,7 @@
 
   - Build Triggers: 
     - Chose Poll SCM 
-    - Schedule:
+    - Schedule: <br>
       `* * * * * (* 5 times)` 
     - Save 
     - You can check below to see the 'cron syntax'
@@ -205,19 +205,19 @@ Build Triggers:
 
 - Build Periodically 
   - Jenkins uses a timer to trigger a build.<br> 
-    `***** build every minute`
+    `***** build every minute` <br>
     `H**** build every hour` Best for Database backup
 
 - Poll SCM           
   - Jenkins trigger a build based on changes in the source codes. <br>
     (Generally Recommended) 
   - Jenkins pull the changes from GitHub. 
-  - Cron Syntax: 
-        `H/15 * * * *   # Check every 15 minutes`
-        `* * * * *      # Minute`
-        `* * * * *      # Hour`
-        `* * * * *      # Day of month`
-        `* * * * *      # Month`
+  - Cron Syntax: <br>
+        `H/15 * * * *   # Check every 15 minutes` <br>
+        `* * * * *      # Minute` <br>
+        `* * * * *      # Hour` <br>
+        `* * * * *      # Day of month` <br>
+        `* * * * *      # Month` <br>
         `* * * * 5      # Day of week (5 is Friday, adjust as needed)`
   
 
@@ -225,7 +225,9 @@ Build Triggers:
   - Jenkins do a build when there is any changes in the source code <br> 
    (GitHub Account) 
   - GitHub push the changes to Jenkins.  
-  - To configure = GitHub--> Project Repo--> Settings--> Webhooks-->  Add Webhook 
-     `Content type = (application/json)`
-     `Payload URL = Paste the Jenkins URL with the extension github-webhook/ `
-     `(e.g. http://18.218.211.120:8080/github-webhook/)`
+  - To configure = GitHub--> Project Repo--> Settings--> Webhooks-->  Add Webhook  <br>
+     `Content type = (application/json)` <br>
+     `Payload URL = Paste the Jenkins URL with the extension github-webhook/ ` <br>
+     `(e.g. http://18.218.211.120:8080/github-webhook/)` 
+
+##
