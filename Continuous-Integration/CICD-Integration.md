@@ -17,7 +17,7 @@
   - Select 'Build Now'
 ##
 
-2. Jenkins Maven Intergrations: 
+2. Jenkins Maven Intergrations: <br>
    Configure Maven: <br> 
    - In Jenkins, Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
    - Under Name, write maven+highest-version (eg: maven3.9.6)
@@ -148,7 +148,7 @@
      - Deploy war/ear to container ==>
      - Under 'Deploy war/ear to a container'
        - WAR/EAR files: 
-          `target/*.war`   
+          `target/*.war`  <br> 
           `target/your-built-artifact.war` 
        - Context path: leave blank   
                                          
