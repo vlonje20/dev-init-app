@@ -39,7 +39,7 @@ Install Java on Windows: <br>
 To install Java on Windows, see [Install Java On Windows](https://www.java.com/download/ie_manual.jsp) 
 
 ##
-Install ubuntu on Windows: 
+Install ubuntu on Windows: <br>
 To install ubuntu on Windows, see [Install ubuntu On Windows](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#3-download-ubuntu)
 ##
 Tools to Install:
@@ -56,7 +56,7 @@ Tools Needed:
 - Sonarqube = scan codes 
 - Nexus = Backup our build artifact (optional)
 - Tomcat = (to host our application)
-- Docker = <br>
+- Docker: <br>
     - to create docker images <br>
     - to run containers 
 - DockerHub = to backup our images  
@@ -79,6 +79,6 @@ DevOps Tools:
 App Final Name: 
   jenkins-app
 ##
-Note:
+Note: <br>
 Project src-code: w3school account: (mamicah2020@gmail.com)
 ##
