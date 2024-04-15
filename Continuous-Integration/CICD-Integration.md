@@ -18,7 +18,7 @@
 ##
 
 2. Jenkins Maven Intergrations: <br>
-Configure Maven: <br> 
+``Configure Maven:`` <br> 
 - In Jenkins, Dashboard ==> Manage Jenkins ==> Tools ==> Add Maven 
 - Under Name, write maven+highest-version (eg: maven3.9.6)
 - Now 'Save' <br>
