@@ -10,6 +10,7 @@
   - Under Credentials, select '+Add' then Jenkins. <br>
   - Leave Domain, Kind and Scope as default. <br>
   - Under username, input your jenkins username and password. <br>
+  - Under ID, input your identifier. <br>
   - Input your description and select Add. <br>
 - Now Under Credentials replace -none- with your credentials. 
 - Under 'Branches to build' input the branch you want to build from. 
@@ -32,7 +33,7 @@ Build with Maven:
 - Select 'Build Now'
 ##
 
-3. Jenkins SonarQube Intergrations: (Code Quality) 
+3. Jenkins SonarQube Intergrations: (Code Quality) <br>
 On SonarQube:<br>
 Generate a Token:
 - Go to Administration ==> Click the dropdown on Security ==> Users
