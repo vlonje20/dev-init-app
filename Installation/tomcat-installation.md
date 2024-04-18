@@ -84,6 +84,12 @@ Paste the following, save and exit:
 ```
 ##
 
+Tomcat Deployment: <br>
+Copy build artifacts to tomcat webservers:
+```
+sudo scp target/*war /var/lib/tomcat9/webapps
+```
+##
 Maven Installation: 
 ```
 sudo apt install maven -y 
