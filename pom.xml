@@ -7,7 +7,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<name>jenkins-app</name>
+	<name>vin-solutions-app</name>
 
 	<description>CICD jenkins Java Project</description>
 
@@ -113,7 +113,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>jenkins-app-v1.0.0</finalName>
+		<finalName>vin-solutions-app-v1.0</finalName>
 		
 		<plugins>
 			<plugin>

@@ -20,7 +20,7 @@ git config --global user.email "gitHubEmail"
 ```
 Make sure to replace the username and email mwith your gitHube username and email
 ##
-Create an account with gitHub: 
+Create an account with gitHub: <br> 
 To create an account in github, see [GitHub Account](https://github.com/) 
 ##
 
@@ -58,8 +58,8 @@ Tools Needed:
 - Nexus = Backup our build artifact (optional)
 - Tomcat = (to host our application)
 - Docker: <br>
-    - to create docker images <br>
-    - to run containers 
+  - to create docker images <br>
+  - to run containers 
 - DockerHub = to backup our images  
 ##
 DevOps Tools: 
@@ -78,11 +78,9 @@ DevOps Tools:
 - terraform = provisioning 
 ##
 App Final Name: 
-  jenkins-app
+  `vin-solutions-app-v1.0`
 ##
-Note: <br>
-Project src-code: w3school account: (mamicah2020@gmail.com)
-##
+
 
 ##
 ### CICD Jenkins Integration:
@@ -314,8 +312,8 @@ Build Triggers:
   - GitHub push the changes to Jenkins.  
   - To configure = GitHub--> Project Repo--> Settings--> Webhooks-->  Add Webhook  <br>
      `Content type = (application/json)` <br>
-     `Payload URL = Paste the Jenkins URL with the extension github-webhook/ ` <br>
-     `(e.g. http://18.218.211.120:8080/github-webhook/)` 
+     `Payload URL = Paste the Jenkins URL with the extension github-webhook/` <br>
+     (e.g. `http://18.218.211.120:8080/github-webhook/`)
 
 ##
 

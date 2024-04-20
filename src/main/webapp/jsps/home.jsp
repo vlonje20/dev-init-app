@@ -96,7 +96,7 @@
            <!-- Manila Section -->
         <div class="w3-container w3-padding-32" id="Manila City">
             <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">The Team</h3>
-            <p>I wanted to take a moment to express my utmost admiration and respect for each and every one of you. 
+            <p>I want to take a moment to express my utmost admiration and respect for each and every one of you. 
               Together, we have just completed an incredible CICD project with Jenkins, and I couldn't be prouder of what we have achieved as a team.
 
               Now that we have achieved this milestone, let us also remember the lessons we have learned along the way. We have learned the power of 
@@ -125,10 +125,10 @@
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/sylvia.png" alt="Sylvia" style="width:100%">
-                <h3>Sylvia Ngum Ebune</h3>
-                <p class="w3-opacity">Solutions Architech Engineer</p>
-                <p>She is responsible for the day-to-day operations of the company. The backbone of the company</p>
+                <img src="https://vin-project.s3.amazonaws.com/project-images/the+staff.JPEG" alt="The+Staff" style="width:100%">
+                <h3>The Staff</h3>
+                <p class="w3-opacity">developers | Engineers | Testers</p>
+                <p>They are responsible for the day-to-day operations of the company. They are the backbone of the company</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
