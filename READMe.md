@@ -193,13 +193,15 @@ Repositories:
   - Blob store: default
   - Deployment policy: Allow redeploy
   - Click 'Create repository'
-
-Users: <br> 
+##
+Users: <br>
+` 
   - Click 'Create local user'
   - Fill out the form 
   - At the bottom under 'Roles', select nx-admin from column 1 and pushed to column 2 
   - Then click 'Create local user'
-
+`
+##
 - Configure Jenkins: 
   - In Jenkins, go to Dashboard ==> Manage Jenkins ==> Plugins 
   - Available Plugins and search 'Nexus Artifact Uploader'
