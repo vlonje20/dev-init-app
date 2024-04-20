@@ -136,7 +136,7 @@ Generate a Token:
 
 On GitHub: <br> 
 - Go to the Build Script (pom.xml) in the GitHub Repository
-- Go to 'Properties' and add/edit the following: 
+- Go to `Properties` and add/edit the following: 
 ```
 <sonar.host.url>your-sonarqube-url</sonar.host.url>
 <sonar.login>your-username</sonar.login>
