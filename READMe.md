@@ -281,7 +281,7 @@ General:
 - Days to keep builds: you can leave blank 
 - Max # of builds to keep: Chose your number (eg: 3)
 - Save 
-
+##
 Build Triggers: 
 - Chose Poll SCM 
 - Schedule: <br>
