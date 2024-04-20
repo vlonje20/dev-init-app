@@ -195,26 +195,24 @@ Repositories:
   - Click 'Create repository'
 ##
 Users: <br>
-` 
-  - Click 'Create local user'
+  - Click `Create local user`
   - Fill out the form 
-  - At the bottom under 'Roles', select nx-admin from column 1 and pushed to column 2 
-  - Then click 'Create local user'
-`
+  - At the bottom under `Roles`, select nx-admin from column 1 and pushed to column 2 
+  - Then click `Create local user`
+
 ##
 - Configure Jenkins: 
   - In Jenkins, go to Dashboard ==> Manage Jenkins ==> Plugins 
-  - Available Plugins and search 'Nexus Artifact Uploader'
+  - Available Plugins and search `Nexus Artifact Uploader`
   - Install without restart 
 
   - Go to your project ==> Configure ==> Build Steps ==> Add build steps
   - Nexus artifact uploader 
-  - Nexus artifact uploader
-  - Nexus Details: 
+    - Nexus Details: 
     - Nexus Version: NEXUS3
     - Protocol: HTTP
     - Nexus UR: your nexus URL without the http/https: (eg: localhost:8081)
-    - Credentials: use the user credentials you earlier configured in Nexus
+    - Credentials: use the user credentials you earlier configured in Nexus when configuring the web
     - GroupId: your project name - what will appear in nexus (eg: jenkins-app): 
     - Version: your version number (eg: 1.0-SNAPSHOT)
     - Repository: The repository you created in Nexus 
@@ -222,12 +220,19 @@ Users: <br>
       - ArtifactId: your ID. Subfolder inside your 'GroupId' (Your project name version. eg: jenkins-app-v1.0.0)
       - Type: war
       - Classifier: leave blank 
-      - File: Get the complete link of your .war file on your backend. Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
+      - File: Get the complete link of your .war file on your backend.  
+      - Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
+  - Now Save 
+  - Build Now 
+##
+To get your default jenkins directory:
+- Go to Dashboard 
+- System
 ##
 5. Jenkins Tomcat Integrations: <br> 
-We do this intergration using a plugin call 'Deploy to Container'  
+We do this intergration using a plugin call `Deploy to Container`  
 - In Jenkins go to Dashboard ==> Manage Jenkins ==> Plugins ==> 
-- Available ==> Search "Deploy to container"
+- Available ==> Search `Deploy to container`
 - Select and install without restart
 
 - Dashboard ==> Project ==> Configure ==> Post-Build-Actions ==> 
@@ -242,19 +247,21 @@ We do this intergration using a plugin call 'Deploy to Container'
 - Add Container ==> Chose Tomcat Version (It should be the latest stable version):
   - Under Containers/Tomcat 9.x Remote 
   - add new credentials
-  - use your tomcat credentials that you will configure in the 'tomcat-users.xml'
-  - Follow the steps below to create your user in 'tomcat-users.xml'
-
-To create your tomcat credentials: 
-- On your terminal do the following: 
+  - use your tomcat credentials that you will configure in the `tomcat-users.xml`
+  - Use the following credential: `manager-gui,admin-gui,manager-script`
+  - Follow the steps below to create your user in `tomcat-users.xml`
+##
+To create your tomcat credentials: <br>
+On your terminal do the following: 
 ```
 sudo nano /etc/tomcat9/tomcat-users.xml 
 ```
-- Paste the following just above the </tomcat-users> closing.
+Paste the following just above the </tomcat-users> closing:
 ```
 <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>     
 <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 ```
+##
 - Under Tomcat URL 
 - Copy and paste your Tomcat URL
 - Save 
