@@ -1,0 +1,27 @@
+node{
+  //def mavenHome = tool name: 'maven3.9.6'
+  def mavenHome = tool name: 'maven3.9.6', type: 'maven'
+
+  stage('CodeClone') {
+    git credentialsId: 'git-jenkins-cred', url: 'https://github.com/vlonje20/jenkins_journey.git'
+  }
+
+  stage('mavenBuild') {
+    sh "${mavenHome}/bin/mvn clean package"
+  }
+
+  stage('CodeQuality') {
+    sh "${mavenHome}/bin/mvn sonar:sonar"
+  // execute the CodeQuality report with sonar
+  }
+  
+   stage('UploadNexus') {
+    sh "${mavenHome}/bin/mvn deploy"
+    //mvn deploy are uploaded in to nexus
+  }
+
+  stage('DeployTomcat') {
+    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://localhost:8080/')], contextPath: null, war: 'target/*war'
+  }
+  
+}

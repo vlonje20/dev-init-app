@@ -221,7 +221,7 @@ Users: <br>
       - Type: war
       - Classifier: leave blank 
       - File: Get the complete link of your .war file on your backend.  
-      - Default link could be found in: /var/lib/jenkins/ (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
+      - Default link could be found in: `/var/lib/jenkins/` (eg: /var/lib/jenkins/workspace/your-project-name/target/jenkins-app-v1.0.0.war)
   - Now Save 
   - Build Now 
 ##
@@ -262,11 +262,15 @@ Paste the following just above the </tomcat-users> closing:
 <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 ```
 ##
+Link to tomcat webapps: `/var/lib/tomcat9/webapps` <br>
+Link to tomcat shutdown.sh: `/usr/share/tomcat9/bin/`
+##
 - Under Tomcat URL 
 - Copy and paste your Tomcat URL
 - Save 
 - Build Now
 ##
+
 6. Email Notification 
 - In Jenkins go to Dashboard ==> Project ==> Configure ==> Post-Build-Action 
 - Add Post-Build-Action ==> Email Notification ==> Emails
@@ -330,22 +334,35 @@ Build Triggers:
 - Dashboard ==> + New Item ==> 
 - Project Name ==> Pipeline ==> OK
 
-Configure Pipeline Jobs: 
-- Project Name ==> Configure 
-- Genaral: 
-  - Discard old builds: 
-    - Strategy: Log Rotation 
-    - Dayes to keep buiilds: (chose of leave blank for less than a day)
-    - Max 3 of builds to keep: (eg: 3)
+Configure Pipeline Jobs: <br>
+`Project Name` ==> `Configure` <br>
+
+## 
+Genaral: 
+- Discard old builds: 
+  - Strategy: Log Rotation 
+  - Dayes to keep buiilds: (chose or leave blank for less than a day)
+  - Max 3 of builds to keep: (eg: 3)
+- GitHub project: 
+  - Project url:
+    `Copy and paste your gitHub project url` <br>
 
 - This project is parameterized:
   - Create parameter 
+## 
 
 - Build Triggers: 
   - Poll SCM 
   - Schedule: * * * * * (5 times with space)
+##
 
-Pipeline 
-- Definition: 
+Pipeline:  
+- Defination: 
+  - Pipeline script
+
+- Paste your groovy script
   - Pipeline script:
+  - Check box of `Use Groovy Sandbox`
+- Save 
+- Build Now
 ##
