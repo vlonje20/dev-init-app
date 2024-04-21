@@ -261,6 +261,9 @@ Paste the following just above the </tomcat-users> closing:
 <user username="tomcat" password="admin123" roles="manager-gui,admin-gui"/>     
 <user username="vin" password="admin123" roles="manager-gui,admin-gui,manager-script"/> 
 ```
+
+Note: <br>
+The `manager-gui,admin-gui` and the `manager-gui,admin-gui,manager-script` should not have the same username.
 ##
 Link to tomcat webapps: `/var/lib/tomcat9/webapps` <br>
 Link to tomcat shutdown.sh: `/usr/share/tomcat9/bin/`
