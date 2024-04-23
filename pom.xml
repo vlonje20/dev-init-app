@@ -113,7 +113,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>vin-solutions-app-v1.2</finalName>
+		<finalName>vin-solutions-app-v2.0</finalName>
 		
 		<plugins>
 			<plugin>
