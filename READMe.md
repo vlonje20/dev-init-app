@@ -112,8 +112,8 @@ Configure Maven: <br>
 Build with Maven: 
 - In Jenkins, Dashboard ==> Project ==> Configure ==> Build Steps 
 - Add Build Step ==> Invoke-top-level Maven Targets 
-- Under 'Maven Version', select your preconfigured maven version.
-- Under 'Goal' write 'clean package' 
+- Under `Maven Version`, select your preconfigured maven version.
+- Under `Goal` write `clean package` 
 - Now 'Save'
 - Select 'Build Now'
 ##

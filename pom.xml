@@ -27,8 +27,8 @@
 		<sonar.password>drama20</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<sonar.projectKey>sqa_4151457438b5507cdf0d2f7e82312e665a811954</sonar.projectKey>
-		<sonar.projectName>vin-solutions-app-v1.0</sonar.projectName>
+		<sonar.projectKey>squ_61ae1e11642b9bb23c226bbbc1f14374f9828585</sonar.projectKey>
+		<sonar.projectName>jenkins_journey</sonar.projectName>
         
 	</properties>
 
