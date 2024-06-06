@@ -42,25 +42,25 @@
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Mr. Dramacydal</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Mr. Dramacydal</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/mr+dramacydal.jpeg" alt="Vin" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Allen</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Allen</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/allen.JPEG" alt="Allen" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Giles</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Giles</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/giles1.jpg" alt="Giles" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Vanisa</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Vanisa</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/va.jpg" alt="Vanisa" style="width:100%">
                 </div>
             </div>
@@ -69,25 +69,25 @@
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Code Builder - Apache Maven</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Code Builder - Apache Maven</div>
                     <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/maven.png" alt="Builder" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Image Builder - Docker</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Image Builder - Docker</div>
                     <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/docker.png" alt="Containerization" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Engineer</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Engineer</div>
                     <img src="https://vin-project.s3.amazonaws.com/project-images/Intramuros.JPEG" alt="Artist" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-topleft w3-black w3-padding">Mr. Dramacydal</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Mr. Dramacydal</div>
                     <img src="https://vin-project.s3.amazonaws.com/project-images/mr+dramacydal.jpeg" alt="Mister" style="width:99%">
                 </div>
             </div>
