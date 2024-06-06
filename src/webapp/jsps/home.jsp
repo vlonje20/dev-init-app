@@ -36,7 +36,7 @@
 
         <!-- Home Section -->
         <div class="w3-container w3-padding-32" id="Home">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Home</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Home</b></h3>
         </div>
 
         <div class="w3-row-padding">
@@ -96,7 +96,7 @@
 
         <!-- About Section -->
         <div class="w3-container w3-padding-32" id="About">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>About Us</b></h3>
         </div>
         <div class="careers container" id="careers">
         <h2 class="w3-center"></h2>
@@ -113,21 +113,22 @@
                   <ul style="list-style-type: none;">
                     <p>Our company is a leading provider of innovative software solutions, dedicated to helping businesses streamline their operations and achieve success in today's rapidly evolving digital landscape. With a strong focus on cutting-edge technology and exceptional customer service, we are committed to delivering tailored solutions that drive growth and efficiency for our clients. Our team of experienced professionals is passionate about harnessing the power of technology to empower businesses and exceed expectations. Partner with us for strategic, reliable, and scalable software solutions that propel your business forward.</p>
                   </ul>
-                  <h4>Our Mantra</h4>
+                  
+                  <h4><span style="color: blue;"><b>Our Mantra</b></span></h4>
                   <ul style="list-style-type: none;">
-                    <p>A little sleep, a little slumber, a little folding of the hands to rest— and poverty will come on you like a thief and scarcity like an armed man.</p>
+                    <p>A little sleep, a little slumber, a little folding of the hands to rest and poverty will come on you like a thief and scarcity like an armed man.</p>
                   </ul> 
                 </div>
               </div>
               <footer class="w3-container" style="padding: 0">
-                <a class="w3-button w3-indigo w3-hover-blue" style="width: 100%;" href="#contact">Proverbs 24:33-34</a>
+                <a class="w3-button w3-indigo w3-hover-blue" style="width: 100%;" href="#contact"><b>Proverbs 24:33-34</b></a>
               </footer>
             </div>
 
-        
+     
            <!-- Team Section -->
         <div class="w3-container w3-padding-32" id="Team">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">The Team</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>The Team</b></h3>
             <p>I want to take a moment to express my utmost admiration and respect for each and every one of you. 
               Together, we have just completed an incredible CICD project with Jenkins, and I couldn't be prouder of what we have achieved as a team.
 
@@ -141,10 +142,9 @@
               I am honored to be a part of this incredible team, and I am excited to witness the great things we will achieve collectively in the future. 
               Congratulations on a job excellently done!
               
-              </p>
+            </p>
 
-              <p> - Vin - Project Cordinator. 
-                </p>
+            <p> - Vin - Project Cordinator. </p>
         </div>
 
         <div class="w3-row-padding w3-bright">
@@ -152,7 +152,7 @@
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/vin-team.jpg" alt="Vin" style="width:100%">
                 <h3>Vin Lonje</h3>
                 <p class="w3-opacity">CEO | Project Coordinator</p>
-                <p>Meet the founder and chief executive officer of our company. He is the pillar and the backbone of the company.
+                <p>Meet the founder and chief executive officer. He is the pillar and the backbone of the company.
                 </p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
