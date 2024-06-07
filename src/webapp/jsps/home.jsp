@@ -48,19 +48,19 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Allen</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">N. Allen</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/allen.JPEG" alt="Allen" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Giles</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">Y. Giles</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/giles1.jpg" alt="Giles" style="width:100%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Vanisa</div>
+                    <div class="w3-display-bottomleft w3-black w3-padding">T. Vanisa</div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/va.jpg" alt="Vanisa" style="width:100%">
                 </div>
             </div>
@@ -75,20 +75,20 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Image Builder - Docker</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/docker.png" alt="Containerization" style="width:99%">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Y. Flora</div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/flora-home.jpg" alt="Flora" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Engineer</div>
-                    <img src="https://vin-project.s3.amazonaws.com/project-images/Intramuros.JPEG" alt="Artist" style="width:99%">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Daily Standup</div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/pp-session.jpg" alt="Project" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Mr. Dramacydal</div>
-                    <img src="https://vin-project.s3.amazonaws.com/project-images/mr+dramacydal.jpeg" alt="Mister" style="width:99%">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Sprint Meetings</div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/pp-session1.jpg" alt="Project" style="width:99%">
                 </div>
             </div>
         </div>
@@ -151,30 +151,33 @@
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/vin-team.jpg" alt="Vin" style="width:100%">
                 <h3>Vin Lonje</h3>
-                <p class="w3-opacity">CEO | Project Coordinator</p>
-                <p>Meet the founder and chief executive officer. He is the pillar and the backbone of the company.
+                <p class="w3-opacity">Sr. Kubernetes Administrator</p>
+                <p>Strong troubleshooting skills, with the ability to diagnose and resolve issues, this account for a significant portion of his responsibilities.
                 </p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
+
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/va-team.jpg" alt="Vanisa" style="width:100%">
                 <h3>Vanisa Tunteng</h3>
                 <p class="w3-opacity">Sr. DevOps Engineer</p>
-                <p>They are responsible for the day-to-day operations of the company. They are the backbone of the company</p>
+                <p>Her strength comes in her Attention to Detail and also her skills in prioritizing tasks to manage workload to meet project deadlines. </p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
+
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/allen-team.jpg" alt="Allen" style="width:100%">
                 <h3>Allen Nebota</h3>
                 <p class="w3-opacity">Sr. Security Engineer</p>
-                <p>He is in charge of the company's security, technological development, innovation, and IT infrastructure..</p>
+                <p>He is in charge of the company's security, technological development, innovation, and IT infrastructure. He is the team's Gladiator.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
+
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/giles-team.jpg" alt="Giles" style="width:100%">
                 <h3>Giles Yunika</h3>
                 <p class="w3-opacity">Sr. Infrastructure Engineer</p>
-                <p>She is incharge of bridging the gap between software development and operations through automation.</p>
+                <p>With his Precise attention to detail to ensure the integrity and security of IT infrastructure, he is an invaluable member of the team.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
 
@@ -182,9 +185,17 @@
                 <img src="https://dev-init-app.s3.amazonaws.com/teams/max-team.jpg" alt="Max" style="width:100%">
                 <h3>T. Maxwell</h3>
                 <p class="w3-opacity">Sr. DevOps Engineer</p>
-                <p>She is incharge of bridging the gap between software development and operations through automation.</p>
+                <p>He brings his "Analytical Problem-Solving" ability to troubleshoot issues and find efficient and long lasting solutions.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://dev-init-app.s3.amazonaws.com/teams/flora-team.jpg" alt="Flora" style="width:100%">
+                <h3>Flora Yuyuun</h3>
+                <p class="w3-opacity">Sr. DevOps Engineer</p>
+                <p>With her Automation Mindset, she is Focus on automating manual tasks to improve efficiency and consistency.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>            
         </div>
 
 
