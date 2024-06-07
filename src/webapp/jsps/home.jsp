@@ -69,8 +69,8 @@
         <div class="w3-row-padding">
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-black w3-padding">Code Builder - Apache Maven</div>
-                    <img src="https://jenkins-cicd-project.s3.amazonaws.com/project-photos/maven.png" alt="Builder" style="width:99%">
+                    <div class="w3-display-bottomleft w3-black w3-padding">Von Max</div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/max1.jpg" alt="Builder" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
@@ -177,12 +177,20 @@
                 <p>She is incharge of bridging the gap between software development and operations through automation.</p>
                 <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
             </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <img src="https://dev-init-app.s3.amazonaws.com/teams/max-team.jpg" alt="Max" style="width:100%">
+                <h3>T. Maxwell</h3>
+                <p class="w3-opacity">Sr. DevOps Engineer</p>
+                <p>She is incharge of bridging the gap between software development and operations through automation.</p>
+                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+            </div>
         </div>
 
 
         <!-- Contact Section -->
         <div class="w3-container w3-padding-32" id="contact">
-            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+            <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Contact</b></h3>
             <p>Lets get in touch and talk about your next project.</p>
             <form action="/action_page.php" target="_blank">
                 <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
