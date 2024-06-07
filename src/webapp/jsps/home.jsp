@@ -114,14 +114,25 @@
                     <p>Our company is a leading provider of innovative software solutions, dedicated to helping businesses streamline their operations and achieve success in today's rapidly evolving digital landscape. With a strong focus on cutting-edge technology and exceptional customer service, we are committed to delivering tailored solutions that drive growth and efficiency for our clients. Our team of experienced professionals is passionate about harnessing the power of technology to empower businesses and exceed expectations. Partner with us for strategic, reliable, and scalable software solutions that propel your business forward.</p>
                   </ul>
                   
-                  <h4><span style="color: blue;"><b>Our Mantra</b></span></h4>
+                  <h4><span style="color: blue;"><b>Our Mission</b></span></h4>
                   <ul style="list-style-type: none;">
-                    <p>A little sleep, a little slumber, a little folding of the hands to rest and poverty will come on you like a thief and scarcity like an armed man.</p>
+                    <p>Our mission is to revolutionize the way businesses operate by providing cutting-edge software solutions that enhance efficiency, drive innovation, and foster growth. We are committed to delivering products that not only meet but exceed our clients' expectations, ensuring their success in the digital age. We believe in a client-centric approach, where understanding the specific needs and goals of our clients is paramount. Our team of experienced professionals works closely with clients at every stage of the project lifecycle, from initial consultation to deployment and ongoing support. This collaborative process ensures that the final product is perfectly aligned with our clients' vision and business objectives.</p>
                   </ul> 
+
+                  <h4><span style="color: blue;"><b>Why Choose Us?</b></span></h4>
+                  <ul style="list-style-type: none;">
+                    <p> Choosing <span style="color: red;"><b>.iNit Technologies</b></span> means partnering with a team that is dedicated to your success. Here’s what sets us apart:
+
+                      <li><b>Expertise:</b> Years of experience and a proven track record in delivering high-quality software solutions.</li>
+                      <li><b>Customization:</b> Solutions tailored to meet the specific needs and challenges of your business.</li>
+                      <li><b>Support:</b> Comprehensive support and maintenance services to ensure your software remains up-to-date and performs flawlessly.</li>
+                      <li><b>Innovation:</b> Commitment to leveraging the latest technologies to provide innovative solutions that drive business growth.</li>
+                    </p>
+                  </ul>                  
                 </div>
               </div>
               <footer class="w3-container" style="padding: 0">
-                <a class="w3-button w3-indigo w3-hover-blue" style="width: 100%;" href="#contact"><b>Proverbs 24:33-34</b></a>
+                <a class="w3-button w3-indigo w3-hover-blue" style="width: 100%;" href="#contact">A little sleep, a little slumber, a little folding of the hands to rest and poverty will come on you like a thief and scarcity like an armed man.</a>
               </footer>
             </div>
 
