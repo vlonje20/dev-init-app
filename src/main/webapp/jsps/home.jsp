@@ -106,28 +106,28 @@
                 <h3>Expert Team</h3>
                 <p class="w3-opacity">Diversed Experiences</p>
                 <p>Our team is composed of highly skilled professionals with diverse backgrounds in software dev, project management, and IT consulting. We are well-equipped to tackle complex projects and deliver high-quality results on time and within budget.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <p><button class="w3-button w3-light-grey w3-block">Panel of Experts</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/about/innovation.jpg" alt="innovation" style="width:100%">
                 <h3>Innovative Solutions</h3>
                 <p class="w3-opacity">Think Outside the Box</p>
                 <p>We are dedicated to crafting cutting-edge software solutions that not only meet but exceed the unique needs of our clients. By leveraging the latest technologies and best practices, we ensure that our solutions are scalable, secure, and future-proof.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <p><button class="w3-button w3-light-grey w3-block">Groundbreaking Methods</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/about/success.jpg" alt="Mike" style="width:100%">
                 <h3>Proven Track Record</h3>
                 <p class="w3-opacity">Overwhelming Testimonies</p>
                 <p>We pride ourselves on our proven track record of successful projects. Our portfolio showcases a wide range of completed projects. Our consistent delivery of high-quality solutions has earned us a reputation for excellence and reliability.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <p><button class="w3-button w3-light-grey w3-block">Well-Documented Efficacy</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <img src="https://dev-init-app.s3.amazonaws.com/about/customer-service.jpg" alt="Dan" style="width:100%">
                 <h3>Customer-Centric</h3>
                 <p class="w3-opacity">24/7 Customer-Care</p>
                 <p>Our customers are at the heart of everything we do. We take time to understand specific challenges, goals, allowing us to tailor our solutions to deliver maximum value. Committed to exceptional service and ensures long-term success and satisfaction</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <p><button class="w3-button w3-light-grey w3-block">Customer-First Approach</button></p>
             </div>
         </div>
 
