@@ -81,14 +81,14 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>Engineers at Work</b></div>
-                    <img src="https://dev-init-app.s3.amazonaws.com/home/pp-session1.jpg" alt="House" style="width:99%">
+                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>Engineer Emma</b></div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/emma-home.jpg" alt="Emma" style="width:99%">
                 </div>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
                     <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>At the Dev Stage</b></div>
-                    <img src="https://dev-init-app.s3.amazonaws.com/home/vin-dev.jpg" alt="House" style="width:99%">
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/vin-dev.jpg" alt="Stage" style="width:99%">
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
                 <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://wa.me/+23776150958';">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://dev-init-app.s3.amazonaws.com/teams/coming-soon.jpg" alt="Emma" style="width:100%">
+                <img src="https://dev-init-app.s3.amazonaws.com/teams/emma-team.jpg" alt="Emma" style="width:100%">
                 <h3>Emmanuela N.</h3>
                 <p class="w3-opacity">Sr. Cloud Engineer</p>
                 <p>With her expertise in platforms like AWS and Azure, and her proficiency in automation she is an invaluable asset to the company.</p>
