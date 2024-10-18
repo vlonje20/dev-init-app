@@ -87,8 +87,8 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>At the Dev Stage</b></div>
-                    <img src="https://dev-init-app.s3.amazonaws.com/home/vin-dev.jpg" alt="Stage" style="width:99%">
+                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>Engineer vicky</b></div>
+                    <img src="https://dev-init-app.s3.amazonaws.com/home/vicky-home.jpg" alt="Vicky" style="width:99%">
                 </div>
             </div>
         </div>
@@ -193,11 +193,11 @@
                 <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://wa.me/+23778917583';">Contact</button></p>
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
-                <img src="https://dev-init-app.s3.amazonaws.com/teams/vacant.jpg" alt="Vacant" style="width:100%">
-                <h3>Position Available</h3>
+                <img src="https://dev-init-app.s3.amazonaws.com/teams/vicky-team.jpg" alt="Vicky" style="width:100%">
+                <h3>V. Victorine</h3>
                 <p class="w3-opacity">Sr. Linux Administrator</p>
-                <p>Expected to have Deep understanding of various Linux distributions, scripting, and Knowledge of package management systems.</p>
-                <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+                <p>Invaluable for her deep understanding of various Linux distributions, scripting, and Knowledge of package management systems.</p>
+                <p><button class="w3-button w3-light-grey w3-block" onclick="window.location.href='https://wa.me/+237683240883';">Contact</button></p>
             </div>
         </div>
 
