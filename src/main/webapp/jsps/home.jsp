@@ -87,7 +87,7 @@
             </div>
             <div class="w3-col l3 m6 w3-margin-bottom">
                 <div class="w3-display-container">
-                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>Engineer vicky</b></div>
+                    <div class="w3-display-bottomleft w3-padding" style="background-color: rgba(0, 0, 0, 0.5); color: white;"><b>Engineer Vicky</b></div>
                     <img src="https://dev-init-app.s3.amazonaws.com/home/vicky-home.jpg" alt="Vicky" style="width:99%">
                 </div>
             </div>
